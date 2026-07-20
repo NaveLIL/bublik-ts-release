@@ -1,0 +1,197 @@
+name: Distribution CI
+
+on:
+  push:
+    branches:
+      - main
+    tags:
+      - "v*"
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: distribution-${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  distribution-ci:
+    name: distribution-ci
+    runs-on: ubuntu-24.04
+    timeout-minutes: 35
+    env:
+      DATABASE_URL: postgresql://postgres:postgres@127.0.0.1:5432/bublik_ci?schema=public
+      DISCORD_TOKEN: distribution-ci-placeholder
+      DISCORD_CLIENT_ID: "000000000000000000"
+      REDIS_URL: redis://127.0.0.1:6379
+      NODE_ENV: test
+    services:
+      postgres:
+        image: postgres@sha256:4e6e670bb069649261c9c18031f0aded7bb249a5b6664ddec29c013a89310d50
+        env:
+          POSTGRES_USER: postgres
+          POSTGRES_PASSWORD: postgres
+          POSTGRES_DB: bublik_ci
+        ports:
+          - 5432:5432
+        options: >-
+          --health-cmd "pg_isready -U postgres -d bublik_ci"
+          --health-interval 5s
+          --health-timeout 5s
+          --health-retries 12
+      redis:
+        image: redis@sha256:6ab0b6e7381779332f97b8ca76193e45b0756f38d4c0dcda72dbb3c32061ab99
+        ports:
+          - 6379:6379
+        options: >-
+          --health-cmd "redis-cli ping"
+          --health-interval 5s
+          --health-timeout 5s
+          --health-retries 12
+
+    steps:
+      - name: Checkout distribution
+        uses: actions/checkout@9c091bb21b7c1c1d1991bb908d89e4e9dddfe3e0 # v7.0.0
+        with:
+          persist-credentials: false
+
+      - name: Scan distribution for secrets
+        shell: bash
+        env:
+          GITLEAKS_VERSION: 8.30.1
+          GITLEAKS_LINUX_X64_SHA256: 551f6fc83ea457d62a0d98237cbad105af8d557003051f41f3e7ca7b3f2470eb
+        run: |
+          set -euo pipefail
+          archive="$RUNNER_TEMP/gitleaks.tar.gz"
+          binary="$RUNNER_TEMP/gitleaks"
+          curl --fail --silent --show-error --location \
+            "https://github.com/gitleaks/gitleaks/releases/download/v${GITLEAKS_VERSION}/gitleaks_${GITLEAKS_VERSION}_linux_x64.tar.gz" \
+            --output "$archive"
+          printf '%s  %s\n' "$GITLEAKS_LINUX_X64_SHA256" "$archive" | sha256sum --check --strict
+          tar --extract --gzip --file "$archive" --directory "$RUNNER_TEMP" gitleaks
+          chmod 0755 "$binary"
+          "$binary" dir --no-banner --redact --verbose .
+
+      - name: Setup Node.js
+        uses: actions/setup-node@820762786026740c76f36085b0efc47a31fe5020 # v7.0.0
+        with:
+          node-version: 24
+          cache: npm
+
+      - name: Verify protected payload and manifest
+        run: node scripts/verify-distribution.js
+
+      - name: Read verified release identity
+        id: release
+        shell: bash
+        run: |
+          set -euo pipefail
+          node <<'NODE'
+          const fs = require('node:fs');
+          const manifest = JSON.parse(fs.readFileSync('artifact-manifest.json', 'utf8'));
+          const output = [
+            ['version', manifest.releaseVersion],
+            ['created', manifest.createdAt],
+            ['source_revision', manifest.sourceRevision],
+            ['source_tree', manifest.sourceTree],
+          ];
+          fs.appendFileSync(
+            process.env.GITHUB_OUTPUT,
+            output.map(([key, value]) => `${key}=${value}\n`).join(''),
+          );
+          NODE
+          if [[ "$GITHUB_REF_TYPE" == "tag" ]]; then
+            manifest_version="$(node -p "require('./artifact-manifest.json').releaseVersion")"
+            test "$GITHUB_REF_NAME" = "v${manifest_version}"
+          fi
+
+      - name: Install runtime dependencies
+        run: npm ci --omit=dev --ignore-scripts --no-audit --no-fund
+
+      - name: Audit runtime dependencies
+        run: npm audit --omit=dev --audit-level=high
+
+      - name: Generate and validate Prisma client
+        run: |
+          npx --no-install prisma generate
+          npx --no-install prisma validate
+
+      - name: Apply migrations to a fresh database
+        run: npx --no-install prisma migrate deploy
+
+      - name: Verify post-migration data invariants
+        run: node scripts/snapshot-baseline-data.js --postflight
+
+      - name: Require Redis noeviction policy
+        env:
+          REDIS_CONTAINER_ID: ${{ job.services.redis.id }}
+        run: |
+          test -n "$REDIS_CONTAINER_ID"
+          test "$(docker exec "$REDIS_CONTAINER_ID" redis-cli CONFIG SET maxmemory-policy noeviction)" = "OK"
+          test "$(docker exec "$REDIS_CONTAINER_ID" redis-cli --raw CONFIG GET maxmemory-policy | tail -n 1 | tr -d '\r')" = "noeviction"
+
+      - name: Build runtime-only image
+        run: >-
+          docker build --pull=false
+          --build-arg BUBLIK_DISTRIBUTION_REVISION="$GITHUB_SHA"
+          --build-arg BUBLIK_RELEASE_REVISION="${{ steps.release.outputs.source_revision }}"
+          --build-arg BUBLIK_RELEASE_CREATED="${{ steps.release.outputs.created }}"
+          --build-arg BUBLIK_RELEASE_VERSION="${{ steps.release.outputs.version }}"
+          --build-arg BUBLIK_RELEASE_SOURCE_TREE="${{ steps.release.outputs.source_tree }}"
+          --tag bublik-runtime:ci .
+
+      - name: Verify image boundary and health contract
+        env:
+          EXPECTED_VERSION: ${{ steps.release.outputs.version }}
+          EXPECTED_CREATED: ${{ steps.release.outputs.created }}
+          EXPECTED_SOURCE_REVISION: ${{ steps.release.outputs.source_revision }}
+          EXPECTED_SOURCE_TREE: ${{ steps.release.outputs.source_tree }}
+        run: |
+          test "$(docker image inspect bublik-runtime:ci --format '{{.Config.User}}')" = "node"
+          test "$(docker image inspect bublik-runtime:ci --format '{{ index .Config.Labels "org.opencontainers.image.revision" }}')" = "$GITHUB_SHA"
+          test "$(docker image inspect bublik-runtime:ci --format '{{ index .Config.Labels "org.opencontainers.image.version" }}')" = "$EXPECTED_VERSION"
+          test "$(docker image inspect bublik-runtime:ci --format '{{ index .Config.Labels "org.opencontainers.image.created" }}')" = "$EXPECTED_CREATED"
+          test "$(docker image inspect bublik-runtime:ci --format '{{ index .Config.Labels "io.bublik.release.source-revision" }}')" = "$EXPECTED_SOURCE_REVISION"
+          test "$(docker image inspect bublik-runtime:ci --format '{{ index .Config.Labels "io.bublik.release.source-tree" }}')" = "$EXPECTED_SOURCE_TREE"
+          docker run --rm --entrypoint sh bublik-runtime:ci -c '
+            set -eu
+            test -f dist/index.js
+            test ! -e src
+            test ! -e tests
+            test ! -e dist-protected
+            test -z "$(find dist \( -type d -name __tests__ -o -type f \( -name "*.ts" -o -name "*.map" -o -name "*.d.ts" -o -name "*.test.js" -o -name "*.spec.js" \) \) -print -quit)"
+            if find dist -type f -name "*.js" -exec grep -l "sourceMappingURL=" {} \; | grep -q .; then exit 1; fi
+          '
+          if docker run --rm --entrypoint node bublik-runtime:ci \
+            dist/core/HealthMarker.js --check >/dev/null 2>&1; then
+            echo "healthcheck unexpectedly passed without PID 1 and a fresh marker" >&2
+            exit 1
+          fi
+
+      - name: Exercise image migration entrypoint
+        run: >-
+          docker run --rm --network host
+          -e DATABASE_URL="$DATABASE_URL"
+          -e MIGRATE_ONLY=1
+          -e PRISMA_BASELINE_EXISTING=0
+          bublik-runtime:ci
+
+  dependency-review:
+    name: dependency-review
+    if: github.event_name == 'pull_request'
+    runs-on: ubuntu-24.04
+    timeout-minutes: 10
+    permissions:
+      contents: read
+    steps:
+      - name: Checkout distribution
+        uses: actions/checkout@9c091bb21b7c1c1d1991bb908d89e4e9dddfe3e0 # v7.0.0
+        with:
+          persist-credentials: false
+
+      - name: Review dependency changes
+        uses: actions/dependency-review-action@a1d282b36b6f3519aa1f3fc636f609c47dddb294 # v5.0.0
+        with:
+          fail-on-severity: high

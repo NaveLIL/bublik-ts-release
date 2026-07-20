@@ -1,0 +1,81 @@
+name: bublik-n
+
+services:
+  postgres:
+    image: ${BUBLIK_POSTGRES_IMAGE:-postgres@sha256:20edbde7749f822887a1a022ad526fde0a47d6b2be9a8364433605cf65099416}
+    container_name: bublik-postgres
+    restart: unless-stopped
+    environment:
+      POSTGRES_USER: ${POSTGRES_USER:-bublik}
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD:?Set POSTGRES_PASSWORD in .env}
+      POSTGRES_DB: ${POSTGRES_DB:-bublik}
+    volumes:
+      - pg_data:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U \"$${POSTGRES_USER}\" -d \"$${POSTGRES_DB}\""]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+
+  redis:
+    image: ${BUBLIK_REDIS_IMAGE:-redis@sha256:8b81dd37ff027bec4e516d41acfbe9fe2460070dc6d4a4570a2ac5b9d59df065}
+    container_name: bublik-redis
+    restart: unless-stopped
+    command:
+      - redis-server
+      - --appendonly
+      - "yes"
+      - --appendfsync
+      - everysec
+      - --maxmemory
+      - ${REDIS_MAXMEMORY:-256mb}
+      - --maxmemory-policy
+      - noeviction
+    volumes:
+      - redis_data:/data
+    healthcheck:
+      test: ["CMD", "redis-cli", "ping"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+
+  bot:
+    image: ${BUBLIK_IMAGE:-bublik-n-bot:latest}
+    build:
+      context: .
+      dockerfile: Dockerfile
+      args:
+        BUBLIK_DISTRIBUTION_REVISION: ${BUBLIK_DISTRIBUTION_REVISION:-local-build}
+        BUBLIK_RELEASE_REVISION: ${BUBLIK_RELEASE_REVISION:-0000000000000000000000000000000000000000}
+        BUBLIK_RELEASE_CREATED: ${BUBLIK_RELEASE_CREATED:-1970-01-01T00:00:00.000Z}
+        BUBLIK_RELEASE_VERSION: ${BUBLIK_RELEASE_VERSION:-0.0.0-local}
+        BUBLIK_RELEASE_SOURCE_TREE: ${BUBLIK_RELEASE_SOURCE_TREE:-0000000000000000000000000000000000000000}
+    container_name: bublik-bot
+    restart: unless-stopped
+    stop_grace_period: 30s
+    depends_on:
+      postgres:
+        condition: service_healthy
+      redis:
+        condition: service_healthy
+    env_file:
+      - .env
+    environment:
+      REDIS_URL: redis://redis:6379
+      MIGRATE_ONLY: "0"
+      BUBLIK_HEALTH_FILE: /tmp/bublik-health.json
+      BUBLIK_HEALTH_MAX_AGE_MS: "75000"
+      # The one-time legacy baseline is migration-only and must never leak
+      # from .env into an ordinary service start.
+      PRISMA_BASELINE_EXISTING: "0"
+    volumes:
+      - logs_data:/app/logs
+      - ./locales:/app/locales:ro
+
+volumes:
+  pg_data:
+    name: bublik-n_pg_data
+  redis_data:
+    name: bublik-n_redis_data
+  logs_data:
+    name: bublik-n_logs_data

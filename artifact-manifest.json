@@ -1,0 +1,1009 @@
+{
+  "schemaVersion": 2,
+  "releaseVersion": "1.0.0",
+  "createdAt": "2026-07-20T11:21:25.892Z",
+  "sourceRevision": "8f1ee22f51fd5f1ef214e235e6992e24896f04de",
+  "sourceTree": "2bf472af5cf88a3c67de6bccb3aaf4bc2987bab6",
+  "nodeMajor": 24,
+  "buildImage": "node:24-alpine@sha256:a0b9bf06e4e6193cf7a0f58816cc935ff8c2a908f81e6f1a95432d679c54fbfd",
+  "reproducibleBuildCount": 2,
+  "runtimeDependencyCount": 77,
+  "runtimeDependencyTreeSha256": "8190dcf39cae25a0d865af10833e7241561043b5800846aef6a1172fb879f370",
+  "artifactRoot": "dist-protected",
+  "publishableFileCount": 197,
+  "publishableTreeSha256": "8aa5de0708def4e29a35b35b9d233a3e18c331dde8e0c4ec80ffc68b50c79c65",
+  "artifactFileCount": 164,
+  "artifactTreeSha256": "4a7c0c9a43f12852c29fa462208b9878624da9542b98db443b6b0565c6c161a4",
+  "toolchain": {
+    "typescript": "5.9.3",
+    "javascriptObfuscator": "4.2.2",
+    "prisma": "5.22.0"
+  },
+  "files": [
+    {
+      "path": ".dockerignore",
+      "sha256": "23ab9511572861db83dd9f260a799327ad4ca35cec09667b5ae0a755307df450",
+      "bytes": 400
+    },
+    {
+      "path": ".env.example",
+      "sha256": "493ea99de927ce90c8a28c85350e662fdfde1e2602583e080ff4fa11df2b96b1",
+      "bytes": 1924
+    },
+    {
+      "path": ".gitattributes",
+      "sha256": "6438f42e931b6ff38ab288315a9052aff6ab21a6678f24692f3adb1c81364f14",
+      "bytes": 114
+    },
+    {
+      "path": ".github/CODEOWNERS",
+      "sha256": "358bb01fed7fdfa5e6a0739fb72fea66dfd0e06168e8a193a0943ccf5c465da9",
+      "bytes": 11
+    },
+    {
+      "path": ".github/ISSUE_TEMPLATE/bug.yml",
+      "sha256": "2f3097a6687fd1319f7135ceff9a822df85a77d92e7e946b81b38b99bef9c35b",
+      "bytes": 2245
+    },
+    {
+      "path": ".github/ISSUE_TEMPLATE/config.yml",
+      "sha256": "2429b2ba13766b7b00c2a1fd438d33e4ce46696067ab4fd8d5356e67fa752a9a",
+      "bytes": 496
+    },
+    {
+      "path": ".github/ISSUE_TEMPLATE/feature.yml",
+      "sha256": "3d10b3007a4f2387804ebb87ad5f0a91b846704def3f34dc8efbc470450dc918",
+      "bytes": 1101
+    },
+    {
+      "path": ".github/PULL_REQUEST_TEMPLATE.md",
+      "sha256": "60dc87e50a1f27e98e17efb7065edf1eeb16ae89a50dc97ca6591cb761f3131e",
+      "bytes": 929
+    },
+    {
+      "path": ".github/dependabot.yml",
+      "sha256": "0de7bbd36fedaacdb82c96be5f646d3c6fd1c5bb6777e223b210652be965b734",
+      "bytes": 895
+    },
+    {
+      "path": ".github/workflows/distribution-ci.yml",
+      "sha256": "04dcf6fdab69a70088de4e8788a8ce7d4d4f59532325e0286cb6c8bf70b6eb43",
+      "bytes": 7938
+    },
+    {
+      "path": ".gitignore",
+      "sha256": "c4b70b55a62da6fb52026bf27d97c4f9954305eed113753a2ce06c9f61e667e2",
+      "bytes": 580
+    },
+    {
+      "path": ".gitleaks.toml",
+      "sha256": "143f78f9c0f264ac6840ef482154279d3219dd0039241b031fd633c353928661",
+      "bytes": 376
+    },
+    {
+      "path": "CHANGELOG.md",
+      "sha256": "d0a13d80af40621996aa85b957da831a56903f7774fe646b0f91ccb81f5ad93b",
+      "bytes": 707
+    },
+    {
+      "path": "CONTRIBUTING.md",
+      "sha256": "04024c57f17ef3ba1ed90442759c224ca2aa7c9ae3628fd9e1cd2501e6606d0b",
+      "bytes": 1530
+    },
+    {
+      "path": "Dockerfile",
+      "sha256": "b569ed9f72f288c416b298553d319eaa09de389bfb776f1d881474ac5d8aedd8",
+      "bytes": 2377
+    },
+    {
+      "path": "README.md",
+      "sha256": "4a03486962e60063544b4c8ad17e278e2adc7d1c912d9bedc9ce9327d65b394f",
+      "bytes": 6471
+    },
+    {
+      "path": "SECURITY.md",
+      "sha256": "84c6aee5f203583556d2eaf66962e5b9e756496347d9f93f12984e34215ae7c9",
+      "bytes": 1665
+    },
+    {
+      "path": "SUPPORT.md",
+      "sha256": "ef689bc5bd212795ea780824e18ecf9c175272ad192d2f4a1f62bfbb66653039",
+      "bytes": 861
+    },
+    {
+      "path": "dist-protected/bot.js",
+      "sha256": "5c6ac737e26e65cf08435829a1ccb92c31f305654d7bbfe8b20bf76e4f08d0b8",
+      "bytes": 22082
+    },
+    {
+      "path": "dist-protected/config.js",
+      "sha256": "b27aecf3e7f48e876c8de1ef99f1d2ac95cf4d85733dab2634f79f449ec3b530",
+      "bytes": 9403
+    },
+    {
+      "path": "dist-protected/core/CommandRegistry.js",
+      "sha256": "6a94e9ee9dfb6c5d9c199236d608c9f2dc5526ee81723f40a09de15bfd0a1142",
+      "bytes": 41866
+    },
+    {
+      "path": "dist-protected/core/Database.js",
+      "sha256": "c0edec99caf47813d03d58d98adfa0b36cdbd5df93704bb22efd7b09634751a4",
+      "bytes": 12641
+    },
+    {
+      "path": "dist-protected/core/EmbedBuilder.js",
+      "sha256": "248e3035b338d4ca47d4061dfc7e39e8fff851db3aa1a4e74fec0943e0936fcb",
+      "bytes": 8966
+    },
+    {
+      "path": "dist-protected/core/ErrorReporter.js",
+      "sha256": "ab671645a94e34c9a465c0de8e662e9eb44cea311a582e871433d4681a3b85ed",
+      "bytes": 46499
+    },
+    {
+      "path": "dist-protected/core/EventHandler.js",
+      "sha256": "e59b74d96be2332b9d225201811bff74207b49a0583194a33136459135245953",
+      "bytes": 21157
+    },
+    {
+      "path": "dist-protected/core/GuildConfig.js",
+      "sha256": "1cff25201341dbf9a8decff273b6d089d4817bbfe8d336a30f57dc224079b03a",
+      "bytes": 32232
+    },
+    {
+      "path": "dist-protected/core/HealthHeartbeat.js",
+      "sha256": "919c7ad41409525759e451090f3c6b8d66bb0a804f3145a0dff9aacaf14a6ea6",
+      "bytes": 31719
+    },
+    {
+      "path": "dist-protected/core/HealthMarker.js",
+      "sha256": "7575968c36e3834fbb55c4b913c9b7f5373497fcf6055579b09afa88921002a0",
+      "bytes": 25616
+    },
+    {
+      "path": "dist-protected/core/I18n.js",
+      "sha256": "cc3d50697b4d49827c4d0c69b6e5c22833126e35969fa27d03afd22d1bdf94b7",
+      "bytes": 13678
+    },
+    {
+      "path": "dist-protected/core/Logger.js",
+      "sha256": "570d370879e8c3602ffd14a9a2e70b08744ad3ebaa4b1e5d44c0e5ac287542d8",
+      "bytes": 17553
+    },
+    {
+      "path": "dist-protected/core/MemberRoleLock.js",
+      "sha256": "aaa997a04a8fd2c319cdc16f3d678dda1697b417d672d52186f14ea381e98c66",
+      "bytes": 20614
+    },
+    {
+      "path": "dist-protected/core/ModuleLifecycle.js",
+      "sha256": "b748a45e169187ed5a9012e6ebeed7cee4f610296f51f1f8e5762282527a1358",
+      "bytes": 10185
+    },
+    {
+      "path": "dist-protected/core/ModuleLoader.js",
+      "sha256": "16e4dbce48e79bc838645e238e17ba9837c7d8bde5f516167be6a51f6c19507c",
+      "bytes": 90542
+    },
+    {
+      "path": "dist-protected/core/Redis.js",
+      "sha256": "936e412ab6dd6bf4487fb2ce1fdd279a9024c93b38d712870c45ac5b648220e4",
+      "bytes": 14508
+    },
+    {
+      "path": "dist-protected/core/RolePolicy.js",
+      "sha256": "13dd6a593dab0cd3384f254842c03ef8f97130e9c247c005d8d2346831944daf",
+      "bytes": 23570
+    },
+    {
+      "path": "dist-protected/core/Safety.js",
+      "sha256": "f8de3645cbbd15172e1c9f4abe9db9bc757fcbc946b6d6284ed9b80020efd541",
+      "bytes": 10019
+    },
+    {
+      "path": "dist-protected/core/SchedulerManager.js",
+      "sha256": "f55a22dcb5efec4d3e188606f08f70e90681bcdd30d99a7a566f617f74a6b422",
+      "bytes": 19577
+    },
+    {
+      "path": "dist-protected/core/Whitelist.js",
+      "sha256": "b1709f6b24b24e443d54a5f38536f20eab62cda70e883bbb4d733c5b66d4dd43",
+      "bytes": 25837
+    },
+    {
+      "path": "dist-protected/core/index.js",
+      "sha256": "4cb1ad3a6669d1e53de6817f9d57122b50ab5ebc86ea60e09c460f32e79614c0",
+      "bytes": 56740
+    },
+    {
+      "path": "dist-protected/index.js",
+      "sha256": "e207af5be3a8709218aab612c6ed8a39c16a66f923f3c66d0fc100b88ddd338e",
+      "bytes": 13024
+    },
+    {
+      "path": "dist-protected/modules/br/commands/br.js",
+      "sha256": "eb896d5dc32f8ad4c1d93ba8c4ae36e813be80e69d389cb259316a0dd06fe587",
+      "bytes": 38272
+    },
+    {
+      "path": "dist-protected/modules/br/components.js",
+      "sha256": "72d6236456d6dd5b0bf5ab0755f08d12b89a09aad484e0776fdabd5c2ff83c1d",
+      "bytes": 42448
+    },
+    {
+      "path": "dist-protected/modules/br/constants.js",
+      "sha256": "48e964bf3221f9d1ac94b6718319279ebcfb639732c6a56600819fa22766e5b9",
+      "bytes": 11387
+    },
+    {
+      "path": "dist-protected/modules/br/database.js",
+      "sha256": "72273491ccd18f17c80ebb03998115dd46de2af37619defc59074c82a08d3d20",
+      "bytes": 26265
+    },
+    {
+      "path": "dist-protected/modules/br/embeds.js",
+      "sha256": "457c436552d8d409d45ae746ea121e5662d619611c86109f4749954ba124d92e",
+      "bytes": 35706
+    },
+    {
+      "path": "dist-protected/modules/br/handlers.js",
+      "sha256": "d73a7c7079338119b57fe1aa5a1aa9adecd8228d1c54e63f98bbccb549dc04a4",
+      "bytes": 68694
+    },
+    {
+      "path": "dist-protected/modules/br/index.js",
+      "sha256": "9bf33bf0224ba8fcaf293f66af99de65d85865353cc3415c9aa6f17b044a2f32",
+      "bytes": 31917
+    },
+    {
+      "path": "dist-protected/modules/br/policy.js",
+      "sha256": "c8b2af530fe55d8fdbcd55204a78ac50f3a23960c0dca3a6de889b1d26f7ae04",
+      "bytes": 5094
+    },
+    {
+      "path": "dist-protected/modules/br/rotation.js",
+      "sha256": "f6e602191853a1a489be98dad0fd6a314a567013ba36535b13d5d7cd30ea3501",
+      "bytes": 46944
+    },
+    {
+      "path": "dist-protected/modules/economy/admin-profile.js",
+      "sha256": "fd170254e5eb99294c1e1b61d5c44ab5863c9c3dd3a8a74bbada9a32e87999db",
+      "bytes": 13995
+    },
+    {
+      "path": "dist-protected/modules/economy/auto-leaderboard.js",
+      "sha256": "53125b295f4fe020f449561fc448493f311d77e212ee1791f85f1c5b2f7af66d",
+      "bytes": 10935
+    },
+    {
+      "path": "dist-protected/modules/economy/cache-aside.js",
+      "sha256": "f1822bf06980efb2d489bcec6ecafacbded1e312a59132cb1bea321ca45d413e",
+      "bytes": 12436
+    },
+    {
+      "path": "dist-protected/modules/economy/collector-lifecycle.js",
+      "sha256": "3af464dd31bf13f8ba5e8562083cd8e4d0e55023c909862fd026488bf5214c5a",
+      "bytes": 7261
+    },
+    {
+      "path": "dist-protected/modules/economy/commands/balance.js",
+      "sha256": "bb51fafb6b8ecd58c44b9d48d52edbb3a448eb872ff0a2fdade56e80cbfb2831",
+      "bytes": 30709
+    },
+    {
+      "path": "dist-protected/modules/economy/commands/blackjack.js",
+      "sha256": "1a36312cd4465c549e37ffee368952594bbfc38d4b5d7c7f82682d38f3471f44",
+      "bytes": 101490
+    },
+    {
+      "path": "dist-protected/modules/economy/commands/blackmarket.js",
+      "sha256": "84591a3032f2c9c29dce26098e2c799b2313a70a27bb0f5d14cc28ca971c14b4",
+      "bytes": 238041
+    },
+    {
+      "path": "dist-protected/modules/economy/commands/capture.js",
+      "sha256": "e68111520324d3a59bf542e30cc6f6fcb898cd14002c1a2d41532baf56a69a1f",
+      "bytes": 48539
+    },
+    {
+      "path": "dist-protected/modules/economy/commands/coinflip.js",
+      "sha256": "36bdd50f085a45842e5867ad410f6bccb7883bbc0e6d67fa424cce59cccb918f",
+      "bytes": 21657
+    },
+    {
+      "path": "dist-protected/modules/economy/commands/craft.js",
+      "sha256": "0e6d1cf91c457bcea3fec7ce26da59f895a163a885c524e155b659703c164bd5",
+      "bytes": 74663
+    },
+    {
+      "path": "dist-protected/modules/economy/commands/dice.js",
+      "sha256": "37dbd8b920a9c7ac8c9956aa172f5c4a73f27bd5a57976f7eb04d27ebefb2ca4",
+      "bytes": 24578
+    },
+    {
+      "path": "dist-protected/modules/economy/commands/earn.js",
+      "sha256": "3880013c2e38aed48dcb4cec753818eb94fbc6e73a146f47a5417112e4eb5373",
+      "bytes": 93482
+    },
+    {
+      "path": "dist-protected/modules/economy/commands/economy.js",
+      "sha256": "033ab1da8e3761d3ed56a392d5c304064988230220f36f5bb3ae57f42232454a",
+      "bytes": 118637
+    },
+    {
+      "path": "dist-protected/modules/economy/commands/frisk.js",
+      "sha256": "e271be3aaf6bdda1ea41953080c869d6394d320d0aeb3a8b9abc5c6feb6f3b23",
+      "bytes": 18876
+    },
+    {
+      "path": "dist-protected/modules/economy/commands/government.js",
+      "sha256": "bfb307ae77b00b432d3bfe4111e41fe8d8b131b32451940eb74349740a913771",
+      "bytes": 21725
+    },
+    {
+      "path": "dist-protected/modules/economy/commands/heist.js",
+      "sha256": "2f19d7b4d9ac892edbb925473e9755d634b1bfed125dd3e8e493be425aa7160e",
+      "bytes": 11557
+    },
+    {
+      "path": "dist-protected/modules/economy/commands/inventory.js",
+      "sha256": "6e9c6c28a3a0989f6a67f51003f2d9a305c1bf5a69aefa92325bbdaecbe17f5b",
+      "bytes": 37597
+    },
+    {
+      "path": "dist-protected/modules/economy/commands/launder.js",
+      "sha256": "823cb7f8e074ee1549a0466c4a65cb01be839ab50ab7493637d18102e6e7e617",
+      "bytes": 26734
+    },
+    {
+      "path": "dist-protected/modules/economy/commands/leaderboard.js",
+      "sha256": "045c0a145dc584e9261360ffc5965144914ad98fbfea017cff74ccc81ba12539",
+      "bytes": 8393
+    },
+    {
+      "path": "dist-protected/modules/economy/commands/market.js",
+      "sha256": "a4eee2568d9ea48aa88684c49a41a69ce1ee8803c0821274f1382a8f350af970",
+      "bytes": 107747
+    },
+    {
+      "path": "dist-protected/modules/economy/commands/raid.js",
+      "sha256": "7c172a0b8a13e3f01c56ea6c9560a0a68381d7f91f23f43cf9ade37d5f4e0055",
+      "bytes": 27666
+    },
+    {
+      "path": "dist-protected/modules/economy/commands/rob.js",
+      "sha256": "dbcd9d090c6a91ca4a6ecfe8731c8c7ddf72a9f8c4012185b95be69117e12ed3",
+      "bytes": 45474
+    },
+    {
+      "path": "dist-protected/modules/economy/commands/shop.js",
+      "sha256": "ea21db36e21a49c418a62e7a94f30b0bd3789b8c28356693e442e88e54178e70",
+      "bytes": 122198
+    },
+    {
+      "path": "dist-protected/modules/economy/commands/slots.js",
+      "sha256": "101681be1b731b653e4684526f4876838f90a506c3d3af0abf9688b53fde8444",
+      "bytes": 65762
+    },
+    {
+      "path": "dist-protected/modules/economy/commands/wanted.js",
+      "sha256": "289dedfec549ab18555c4bfbf5d6081557102180011b0e0257740589fa65e1b7",
+      "bytes": 15724
+    },
+    {
+      "path": "dist-protected/modules/economy/constants.js",
+      "sha256": "e430bf940ad20d59d5b03d6ceeca35946aaff863a174919daa0818a6feb0e599",
+      "bytes": 21065
+    },
+    {
+      "path": "dist-protected/modules/economy/craft-recovery.js",
+      "sha256": "40d2cda72fd43640c3b7ea9f3963a5cec8e37a101d3fb2880d675242f4cddc00",
+      "bytes": 55964
+    },
+    {
+      "path": "dist-protected/modules/economy/database.js",
+      "sha256": "10188ec9bf85751d68c1ecf83b9e38f0866a6807fa650652bbc97c4119cbdcad",
+      "bytes": 119913
+    },
+    {
+      "path": "dist-protected/modules/economy/deferred-wanted.js",
+      "sha256": "ff01838987b25f5dd47ecaf81a957a335d693d4423bfc6a30c939f7166e0a507",
+      "bytes": 18510
+    },
+    {
+      "path": "dist-protected/modules/economy/dirty.js",
+      "sha256": "ff0e6ddcc2ddb6630e4c2eb8f5201dea5569a8cbf3014bf8d4fa43c0f86d4a77",
+      "bytes": 6632
+    },
+    {
+      "path": "dist-protected/modules/economy/earnings.js",
+      "sha256": "7a16e27604e73b978e4c9459b514a3a6a7837f548037e40656fee660c877bd9b",
+      "bytes": 68261
+    },
+    {
+      "path": "dist-protected/modules/economy/embeds.js",
+      "sha256": "3d8a06b2b74fdaad559577759e7b2459737b6bdb9be8a72c4957ff6ba7abf5d8",
+      "bytes": 59665
+    },
+    {
+      "path": "dist-protected/modules/economy/events.js",
+      "sha256": "aa37580dae88cc4442cbf5caea613c408cd96134ef11043c0066e002c5cd0db3",
+      "bytes": 12035
+    },
+    {
+      "path": "dist-protected/modules/economy/heist-engine.js",
+      "sha256": "9a60d064f83dee735819db782546adad03e8d7b1fb9121fb69f05d1b00247483",
+      "bytes": 117335
+    },
+    {
+      "path": "dist-protected/modules/economy/index.js",
+      "sha256": "e518cd8ed867167d16f153a4e48b97c861dbef3a1de618fcf982f8f60bcccc8c",
+      "bytes": 45207
+    },
+    {
+      "path": "dist-protected/modules/economy/inventory.js",
+      "sha256": "5efdb2cfe0d61e57776f786299668a4fbba624ca835883bbc881ccfdc3ffee76",
+      "bytes": 12923
+    },
+    {
+      "path": "dist-protected/modules/economy/maintenance.js",
+      "sha256": "9424570efc1d3a64426065c22c43ee719c144774d5e7b96d41fcbf17e1941e60",
+      "bytes": 18144
+    },
+    {
+      "path": "dist-protected/modules/economy/market-recovery.js",
+      "sha256": "31f76980e07cc509ceddfeaba7a893e03bd25e246ed5e552307c920a90d75c73",
+      "bytes": 18221
+    },
+    {
+      "path": "dist-protected/modules/economy/news.js",
+      "sha256": "eeb76bd6afdd4a76a084f2237c3f3b3546fab1300c098aa59ec6f9e226108fcc",
+      "bytes": 36385
+    },
+    {
+      "path": "dist-protected/modules/economy/ownerImmunity.js",
+      "sha256": "819c7c53e8c499f790506be2e98cbf6f42a371141dccdd1f3ba9d8a1e4bf3d4e",
+      "bytes": 39876
+    },
+    {
+      "path": "dist-protected/modules/economy/pb-tier-reconciliation.js",
+      "sha256": "aab17a5b9ee5bd117d83963b22abd731263554fd1000a7b732908531ff86902b",
+      "bytes": 20799
+    },
+    {
+      "path": "dist-protected/modules/economy/perks.js",
+      "sha256": "2edc61d131f4924fb8c2dd725736dd053d0b0bef161bcc756638a6e5f1b85323",
+      "bytes": 22069
+    },
+    {
+      "path": "dist-protected/modules/economy/phrases.js",
+      "sha256": "4f5f868e52239a3217e8bfbb6b74569d8488865432d3893fc733187e895b85dd",
+      "bytes": 5208
+    },
+    {
+      "path": "dist-protected/modules/economy/profile.js",
+      "sha256": "3cba4bf6da7a8a07e49d86818741a5bcfc1fb826f1845089512930556b5af326",
+      "bytes": 78810
+    },
+    {
+      "path": "dist-protected/modules/economy/raid.js",
+      "sha256": "20295e884ac5cc8393488dd4e27e07f1d08445673acd832d30c83dafcb9b09f6",
+      "bytes": 146820
+    },
+    {
+      "path": "dist-protected/modules/economy/random.js",
+      "sha256": "9b5ee045974f6aacd70151719f623001999b36f4e930295dc420ec6ac886ada1",
+      "bytes": 6845
+    },
+    {
+      "path": "dist-protected/modules/economy/reward-role-policy.js",
+      "sha256": "33e284a06ddbb8cf2624ea78920eb776e943a1a00898a53da2dc53abc6a536a7",
+      "bytes": 8896
+    },
+    {
+      "path": "dist-protected/modules/economy/safety-policy.js",
+      "sha256": "ee98dab94efe0cc1a7cab08aacb301145069a1d7f6103fc410dd0b5d8adae3aa",
+      "bytes": 6650
+    },
+    {
+      "path": "dist-protected/modules/economy/shop-expiry.js",
+      "sha256": "c67bfa835a9b4be89a7dde9d99900c033d485e43e0dda22c6ab907bb36b625a9",
+      "bytes": 39520
+    },
+    {
+      "path": "dist-protected/modules/economy/user-mutation-lock.js",
+      "sha256": "5b6c6bff424d12e54f42c5b205b239a854712f6229cd4956046638a860f18326",
+      "bytes": 4793
+    },
+    {
+      "path": "dist-protected/modules/economy/voice-reward-metadata.js",
+      "sha256": "4884b615dea680af9f7505339f1daefddca1c9c3fe2ac2b91a395c8b75dbcc9e",
+      "bytes": 9970
+    },
+    {
+      "path": "dist-protected/modules/economy/voice-tracker.js",
+      "sha256": "b60db140b7765e198ae8594aedbf4cd2c2f29c5f35ead4dd397de6d966219fcc",
+      "bytes": 206057
+    },
+    {
+      "path": "dist-protected/modules/economy/wanted.js",
+      "sha256": "0816422a80da919a80d4a3bd73375b7a40dfebeac7d7469b7bc912717450293e",
+      "bytes": 8530
+    },
+    {
+      "path": "dist-protected/modules/general/commands/help.js",
+      "sha256": "5c89e16cd168e214f4aac46e1342bceb58b551d19ec9e96db707fe95962cfc98",
+      "bytes": 32417
+    },
+    {
+      "path": "dist-protected/modules/general/commands/language.js",
+      "sha256": "65297d6a53e2d37e875826ad1abd692c9d623a4be8276ad02da3996b2b925773",
+      "bytes": 10727
+    },
+    {
+      "path": "dist-protected/modules/general/commands/ping.js",
+      "sha256": "ff225cb889a186bd1a88a05c2cb9a3f558c9ee4ddb15ff1c7b5a6da76316a579",
+      "bytes": 7830
+    },
+    {
+      "path": "dist-protected/modules/general/commands/reload.js",
+      "sha256": "d614a87fa043f70bdb8cfef363c324c95011c07fb9837d32c6278b494c6457d0",
+      "bytes": 9730
+    },
+    {
+      "path": "dist-protected/modules/general/commands/setup.js",
+      "sha256": "2ab0d246d04df80dd09ab5624fd2f7a311f5dc5eafeca875132663f8701aa0d4",
+      "bytes": 100361
+    },
+    {
+      "path": "dist-protected/modules/general/commands/whitelist.js",
+      "sha256": "361bf1339a04686c81c0a367f6bc720a486ca140cb026320e04aa75aee10c4fe",
+      "bytes": 15195
+    },
+    {
+      "path": "dist-protected/modules/general/index.js",
+      "sha256": "96315c8c50837e35b32298112d3b2090e82d100c1aba9be46de0143f15848dee",
+      "bytes": 6812
+    },
+    {
+      "path": "dist-protected/modules/info/commands/info.js",
+      "sha256": "bd41f4bc4fbb852f3d0784e6e4b29b46e4c38a82039d2fdb496ca03155c591e0",
+      "bytes": 36873
+    },
+    {
+      "path": "dist-protected/modules/info/index.js",
+      "sha256": "7d71353f61f3fb7f709e7f760f46400612e7044245536c87f00d536dfeb5b70c",
+      "bytes": 5920
+    },
+    {
+      "path": "dist-protected/modules/regbattle/commands/regbattle.js",
+      "sha256": "5b97ebf7bae6083008c0e8f5ef34467f536baea037ad1c5df39a7572a87b842a",
+      "bytes": 81485
+    },
+    {
+      "path": "dist-protected/modules/regbattle/constants.js",
+      "sha256": "fc1ea904e03bc00de129e46fd759aa256e0c24a46e88936b991fa88a69d616f4",
+      "bytes": 9315
+    },
+    {
+      "path": "dist-protected/modules/regbattle/database.js",
+      "sha256": "119e3bf9ec2ad918fba7f819b093a8d112994acd4f9d8c38fd15f6a4fee04b1f",
+      "bytes": 33642
+    },
+    {
+      "path": "dist-protected/modules/regbattle/dmPingCooldown.js",
+      "sha256": "56a7542b92164fa1d8956aec4971959ffdf4e7fece0f2dca4cdd943d9228d557",
+      "bytes": 18599
+    },
+    {
+      "path": "dist-protected/modules/regbattle/embeds.js",
+      "sha256": "90a27c496a205130b5903885238d22ef245bea7149aed29f6d40c92228ba69f6",
+      "bytes": 74394
+    },
+    {
+      "path": "dist-protected/modules/regbattle/handlers.js",
+      "sha256": "85beb315bc0ae90ed85ed1b063761c6f5c58b0f6d9c14c2a3a60e364e40ee495",
+      "bytes": 265829
+    },
+    {
+      "path": "dist-protected/modules/regbattle/index.js",
+      "sha256": "117f00fc3235921da8c49e62d6d80cb8ef657bb03d27786fc7e050d852f31746",
+      "bytes": 16904
+    },
+    {
+      "path": "dist-protected/modules/regbattle/integrityPolicy.js",
+      "sha256": "9c504263141b7276e771c03db35d1e950dc6b46e5124c0fb9d92474ecdd2a2c3",
+      "bytes": 5788
+    },
+    {
+      "path": "dist-protected/modules/regbattle/lifecycle.js",
+      "sha256": "20110c6d1be6021e282f44c71b0c31ee79ad16b614c7470ddaffe7710f705794",
+      "bytes": 283771
+    },
+    {
+      "path": "dist-protected/modules/regbattle/ordersMutes.js",
+      "sha256": "193e34c201fbef1c0bb61329419354afd11d56fbee5a56cdd67d0ea5f10c9733",
+      "bytes": 71812
+    },
+    {
+      "path": "dist-protected/modules/regbattle/pingEligibility.js",
+      "sha256": "85e4114b2ca0f56b22862ccd5e4de5d0ab9e757570779571006acc05d546f525",
+      "bytes": 15720
+    },
+    {
+      "path": "dist-protected/modules/regbattle/pinger.js",
+      "sha256": "13328e8a7eadcc839597ec61e3da87e5f9e18de2e98eced2ee5059a43be9c124",
+      "bytes": 94525
+    },
+    {
+      "path": "dist-protected/modules/regbattle/pingerCooldown.js",
+      "sha256": "51972c2416c651f806eab686724dd32f69a1c8f6c8ff981327461d11a0b89014",
+      "bytes": 19854
+    },
+    {
+      "path": "dist-protected/modules/regbattle/pingerPolicy.js",
+      "sha256": "9ba8b9c2551206265b1ae0415bd7493bb334a7388a39c5220038731c53ae58e7",
+      "bytes": 13950
+    },
+    {
+      "path": "dist-protected/modules/regbattle/reprimandScheduler.js",
+      "sha256": "c0f1677dafaf56e3de145fefcb6ac9bd5270bd31e46fac7b8f86c58e903f40e2",
+      "bytes": 54577
+    },
+    {
+      "path": "dist-protected/modules/regbattle/safety.js",
+      "sha256": "46b3604363ac73ef05bda033b4df3dcfb04b5b0cf46434b851b51dca5b5fa81e",
+      "bytes": 15587
+    },
+    {
+      "path": "dist-protected/modules/regbattle/statusPanelPolicy.js",
+      "sha256": "2d7ee02e9cfea2fba0334b11e835bae74a2e350de9a6368d051836b06ae01ad3",
+      "bytes": 18443
+    },
+    {
+      "path": "dist-protected/modules/regbattle/teamsVoiceResolver.js",
+      "sha256": "e7f218c62e6231b3f73993432d72c734da6238268aeb0b1fba6a05485aa3cd32",
+      "bytes": 16298
+    },
+    {
+      "path": "dist-protected/modules/regbattle/utils.js",
+      "sha256": "145737cb45ee0ad3fbc0019913edd79107878569eeaf91abe564dd6b56337f45",
+      "bytes": 13142
+    },
+    {
+      "path": "dist-protected/modules/regbattle/voiceSessions.js",
+      "sha256": "fcbd1b7825b508d0fa0d9a07b0c86bafeea43bdcd5b72b50f389e89b0d0ba3b2",
+      "bytes": 53936
+    },
+    {
+      "path": "dist-protected/modules/teams/commands/team.js",
+      "sha256": "cbddd91e68757166eed092c100d14634c88d30c7b3d563d8acc27e93e590836c",
+      "bytes": 32692
+    },
+    {
+      "path": "dist-protected/modules/teams/constants.js",
+      "sha256": "9afdd2f806e397079d2124993772907d4572da5ab9466ce9eedf24cc5b78f9e6",
+      "bytes": 12058
+    },
+    {
+      "path": "dist-protected/modules/teams/creation.js",
+      "sha256": "43bfc3130475269833e1e9fa5c58a8f3884587e98b30ced456b2a0a857aba606",
+      "bytes": 159641
+    },
+    {
+      "path": "dist-protected/modules/teams/database.js",
+      "sha256": "0d7f4d1e69c82149a6d3768252ad3a60e3a13d33f08d54bc1d2764c5e4ccf2dd",
+      "bytes": 186284
+    },
+    {
+      "path": "dist-protected/modules/teams/embeds.js",
+      "sha256": "87b3c53e49de6dd6e65ef02b2dba6de2d744806ccea84982d120bc36a0e42614",
+      "bytes": 61109
+    },
+    {
+      "path": "dist-protected/modules/teams/handlers.js",
+      "sha256": "38c9bccf77d2e902873303810aa9be1527c52d68e6bbcd4b03404da9d598be85",
+      "bytes": 31204
+    },
+    {
+      "path": "dist-protected/modules/teams/index.js",
+      "sha256": "cf5e5749366028252da2b4874528ffcd474ed3478112f3ac2045902d8f291fa8",
+      "bytes": 15438
+    },
+    {
+      "path": "dist-protected/modules/teams/management.js",
+      "sha256": "0ce72573bbaa35ef90239058fb22e93cc09608138fe7734a1dba04cbb9500e24",
+      "bytes": 94612
+    },
+    {
+      "path": "dist-protected/modules/teams/policy.js",
+      "sha256": "3b36ad956073f7f3dfbc717f739bdd9c7bb8b8ca3c928309a5c7b5cf3669c816",
+      "bytes": 13567
+    },
+    {
+      "path": "dist-protected/modules/teams/polls.js",
+      "sha256": "20d07a8c83211823f2e8558ce9d2ed5cddb4f54927ca31ebe902a91d19299a97",
+      "bytes": 75881
+    },
+    {
+      "path": "dist-protected/modules/teams/reports.js",
+      "sha256": "333923e84de46db0d3567af8fa88fe2ede979dbc49d7a058faeecc2f0aea583a",
+      "bytes": 42277
+    },
+    {
+      "path": "dist-protected/modules/teams/statistics.js",
+      "sha256": "3d2c5e759a36e2891bdbf693a555c8bc66ed96e359991bb5c0a7f7ee6b100e20",
+      "bytes": 26057
+    },
+    {
+      "path": "dist-protected/modules/teams/voiceIntegration.js",
+      "sha256": "cec9a23df495b0bdc0c55ff73ca002e21cb6a9954909568d499e40b7ec13e853",
+      "bytes": 161760
+    },
+    {
+      "path": "dist-protected/modules/tempvoice/commands/voice.js",
+      "sha256": "fae83d4c2aefd483bb861405f135bc00b4e6cc119cd0e268f6f0e597298607d2",
+      "bytes": 82213
+    },
+    {
+      "path": "dist-protected/modules/tempvoice/constants.js",
+      "sha256": "56becbf07cbaeb5a941a414e73fe2cd626aa382657499b5192abfa5fcb56fac7",
+      "bytes": 20533
+    },
+    {
+      "path": "dist-protected/modules/tempvoice/creationRecovery.js",
+      "sha256": "bb9679d8ae5d70fc18a6d6675f29fd522cb29cba37c6406f2e7e147135e34241",
+      "bytes": 34273
+    },
+    {
+      "path": "dist-protected/modules/tempvoice/database.js",
+      "sha256": "489d49ab5aa1573c2db09ff4329f1de254b19181bd723bae2af958919e84eba4",
+      "bytes": 39571
+    },
+    {
+      "path": "dist-protected/modules/tempvoice/embeds.js",
+      "sha256": "f0d12fb71f6fdbaa195a85bfa4320154dc60df8727f7769900c27906336828b9",
+      "bytes": 61182
+    },
+    {
+      "path": "dist-protected/modules/tempvoice/handlers.js",
+      "sha256": "1643d95798fea4a0c79f749b059cd425410da813f0b732234f623f69348b415f",
+      "bytes": 177196
+    },
+    {
+      "path": "dist-protected/modules/tempvoice/index.js",
+      "sha256": "bef508cffcdfbe8e4208d228902a2b0c71f4dcb78d1873f4658446b5b770c3bc",
+      "bytes": 19661
+    },
+    {
+      "path": "dist-protected/modules/tempvoice/lifecycle.js",
+      "sha256": "7d99a5ecad4e7276be3e741a8d797d3a5c2d78d530e95d984d1962b935bb382f",
+      "bytes": 85397
+    },
+    {
+      "path": "dist-protected/modules/tempvoice/permissionSync.js",
+      "sha256": "8deaf3377fc0436b1db7009b063e38cd0f86b189711c55dadec9eda25ed15cf7",
+      "bytes": 71130
+    },
+    {
+      "path": "dist-protected/modules/tempvoice/recovery.js",
+      "sha256": "7554c78547512063feb30bb92affbe196ab99373cb0d971e290f04f723fdffb1",
+      "bytes": 11993
+    },
+    {
+      "path": "dist-protected/modules/tempvoice/utils.js",
+      "sha256": "849898bc55d5ea78f66b918ab5a2e689a115155bc0a9ca9bbf441c79e9828a72",
+      "bytes": 50826
+    },
+    {
+      "path": "dist-protected/modules/vacation/availability.js",
+      "sha256": "1d807b62e447ee8b2d5fe2d64ae1c5f0becac8a876609fde6b76dea9ef734cfe",
+      "bytes": 7681
+    },
+    {
+      "path": "dist-protected/modules/vacation/commands/vacation.js",
+      "sha256": "8d6a8914c82d11700232b3f75b051f6dc1aeb64a922f5aef98b1152bbd8181cf",
+      "bytes": 115451
+    },
+    {
+      "path": "dist-protected/modules/vacation/constants.js",
+      "sha256": "9402e5e29d324549628038f2e7f82385a8ce3fe3f59f14507075907ba0b52d63",
+      "bytes": 13795
+    },
+    {
+      "path": "dist-protected/modules/vacation/database.js",
+      "sha256": "a444bd0677887e2b04503e49ee2450a19d1bf8ed3e6dda2f5fd15c291cb957de",
+      "bytes": 62839
+    },
+    {
+      "path": "dist-protected/modules/vacation/embeds.js",
+      "sha256": "2f7c9e88664309872ce044c9c94564301b193da9d1bf563ac4240581b55b81e1",
+      "bytes": 78515
+    },
+    {
+      "path": "dist-protected/modules/vacation/handlers.js",
+      "sha256": "54d5ccd555d5a230324695c833e461107fe0727d9ec9b2b7272abcf6df606ad0",
+      "bytes": 108672
+    },
+    {
+      "path": "dist-protected/modules/vacation/index.js",
+      "sha256": "f4fe67f78d943af8bdeca89396009c5a313af8d8fbcb493440f65d069e7184b8",
+      "bytes": 11494
+    },
+    {
+      "path": "dist-protected/modules/vacation/saga.js",
+      "sha256": "79c02cfdb2cc5d29f68e73b95b43b33ae0e353b03478e80a5fd0eeab2711f167",
+      "bytes": 38798
+    },
+    {
+      "path": "dist-protected/modules/vacation/scheduler.js",
+      "sha256": "d63a317ded964f1d07fb71aa2c30abedaf96262cb9085e8680aa360d64d925e5",
+      "bytes": 42010
+    },
+    {
+      "path": "dist-protected/modules/vacation/state.js",
+      "sha256": "0fbb7a32bb6e9b414a5169e614132de91300a2a9896d51b55d65d142bc83d325",
+      "bytes": 11730
+    },
+    {
+      "path": "dist-protected/modules/vacation/utils.js",
+      "sha256": "827bd7474016d8f044e36a85bd16021b7f0fed341643dcc3707fdbfb798f0bd5",
+      "bytes": 30164
+    },
+    {
+      "path": "dist-protected/modules/welcome/commands/welcome.js",
+      "sha256": "42f2bbe3774da38b70abaf80e512442279cb677c50ff91be6477ad8e6d5ca56a",
+      "bytes": 40804
+    },
+    {
+      "path": "dist-protected/modules/welcome/embeds.js",
+      "sha256": "65eada42f38a4a96b2362db90ec96529979168eb9b3e528507de7b04136d3555",
+      "bytes": 29391
+    },
+    {
+      "path": "dist-protected/modules/welcome/handlers.js",
+      "sha256": "c8786ab2540dee27d899b2c71aa5912994ceae400c054fd925e8c52618c5172c",
+      "bytes": 115413
+    },
+    {
+      "path": "dist-protected/modules/welcome/index.js",
+      "sha256": "6f84069bad3b7e322a4f8cb226497541fa0c15f3b2499f2975d29f417f419618",
+      "bytes": 86789
+    },
+    {
+      "path": "dist-protected/modules/welcome/lifecycleLock.js",
+      "sha256": "707926f48d8db116300ce35d797bc941e550246ac42ed2b398792c25aa8f5771",
+      "bytes": 14938
+    },
+    {
+      "path": "dist-protected/modules/welcome/membershipStore.js",
+      "sha256": "b341ddf2822f56048efb3708d0b834eb05d809739872a79878f0640aebf88eac",
+      "bytes": 12200
+    },
+    {
+      "path": "dist-protected/modules/welcome/policy.js",
+      "sha256": "c90a4c75155d69c5a75925e13a170c7740bc0acfdb0f55ac1cf8a9afd040798f",
+      "bytes": 19832
+    },
+    {
+      "path": "dist-protected/modules/welcome/reminderClaim.js",
+      "sha256": "1890aacc69fc4820cb3cd80d877f035d4cc70a21a90b543312c11924df9580d7",
+      "bytes": 4945
+    },
+    {
+      "path": "dist-protected/modules/welcome/roleGrantIntent.js",
+      "sha256": "22d047cbc9097698ed78c7deb6f29e9b89ea66ed003105db4900cd2fe0f3a5dc",
+      "bytes": 72368
+    },
+    {
+      "path": "dist-protected/modules/welcome/roleGrantRecovery.js",
+      "sha256": "0398a80546ed6d3a6e286703c8ced3dc5c9cf6400ce51012e9c1a336b73c82e2",
+      "bytes": 81559
+    },
+    {
+      "path": "dist-protected/modules/welcome/roleRemovalIntent.js",
+      "sha256": "e1b279a2ccdef3b3c90b0ed3d371ba50bb6389d32051121245d7f9224c7a4d53",
+      "bytes": 51587
+    },
+    {
+      "path": "dist-protected/modules/welcome/roleRemovalRecovery.js",
+      "sha256": "24871280b5d1e89eac3647761e284520918a6119c2dbb7add772982d0ce02ce4",
+      "bytes": 64228
+    },
+    {
+      "path": "dist-protected/types/Command.js",
+      "sha256": "0b0e1e5cd68804a59eab79c7331acd77b3885cfd16748e738904f291e809d52e",
+      "bytes": 4114
+    },
+    {
+      "path": "dist-protected/types/Module.js",
+      "sha256": "eafbbfe90fa21f0cac67704f13baa87d288f02df0b8a8960d58102aeb22894f0",
+      "bytes": 5046
+    },
+    {
+      "path": "dist-protected/types/index.js",
+      "sha256": "9a8d792f23509d7417df7bf30fa22bf56eb505f645d1b7947160e236872e876e",
+      "bytes": 4436
+    },
+    {
+      "path": "dist-protected/utils/helpers.js",
+      "sha256": "957f6e5eadc1e8ec281450e47a2e3f1c5e8d2fb480ce42962d260067f1737c2f",
+      "bytes": 14751
+    },
+    {
+      "path": "docker-compose.yml",
+      "sha256": "eccba5ab765a25043780c45d48de4b323994d8087d0187740ffbb461c61d3bbc",
+      "bytes": 2496
+    },
+    {
+      "path": "locales/en.json",
+      "sha256": "40d7fa01fbcab5319cd30f8d6a8c3d39fc39e7294f6966763646b6cbc248c4cf",
+      "bytes": 107175
+    },
+    {
+      "path": "locales/ru.json",
+      "sha256": "dc2a6e6acf2de0a8c4717bcc8cdf5e5249319c43e6676454412c2766363454b2",
+      "bytes": 148556
+    },
+    {
+      "path": "package-lock.json",
+      "sha256": "7f5f808e96a3b117d13421ed448d3e3ec4481c1f3bc727b312f3938d729450e2",
+      "bytes": 33000
+    },
+    {
+      "path": "package.json",
+      "sha256": "d2b5fabd107b9c972b641cb7e517cded329e9096a156b5904a9ad0bb20f904cd",
+      "bytes": 984
+    },
+    {
+      "path": "prisma/migrations/20260719000000_baseline/migration.sql",
+      "sha256": "747765d336220ebc34616d425f7566fba238c1ed7f5866c6f63d2f326bdb6d0a",
+      "bytes": 35530
+    },
+    {
+      "path": "prisma/migrations/20260719010000_hardening/migration.sql",
+      "sha256": "84f224d922659e966ce1d7cde0cc5aae9327743a8c5b21e3a67cbea624ea0007",
+      "bytes": 18293
+    },
+    {
+      "path": "prisma/migrations/migration_lock.toml",
+      "sha256": "d6bae7899f05da956e1070ba5703455503208ef79e161acb18c93bfe3c6cd236",
+      "bytes": 127
+    },
+    {
+      "path": "prisma/schema.prisma",
+      "sha256": "24a4f8e528c4ccd36bead9fad8957437abb71527d849da0bade50544541a7b49",
+      "bytes": 32479
+    },
+    {
+      "path": "scripts/entrypoint.sh",
+      "sha256": "9c80fe83e35e5d12e572ee8a723534301c117b2a71a6bbf2da00a00db89eaf50",
+      "bytes": 1156
+    },
+    {
+      "path": "scripts/snapshot-baseline-data.js",
+      "sha256": "aa14946f3adf21262aa7c7c76d3446b1ee162b24eaf0d641323a52d411c3d827",
+      "bytes": 65357
+    },
+    {
+      "path": "scripts/snapshot-redis-data.js",
+      "sha256": "62cd3c694f0723003bb16c9015f3ee54f12e56bfa4efe6a9604559063a7a0cf1",
+      "bytes": 27448
+    },
+    {
+      "path": "scripts/verify-baseline-target.js",
+      "sha256": "630c0f7e00b0b740861070b06aafd47363f303e3694c77647535ae2b9ce72036",
+      "bytes": 23596
+    },
+    {
+      "path": "scripts/verify-distribution.js",
+      "sha256": "d5895b699d02bb4e1933ec2d650513ce1d15b9ddbcf19d69e94b80011a07ef69",
+      "bytes": 23229
+    },
+    {
+      "path": "scripts/verify-pb-idle.js",
+      "sha256": "eb18185f249ac212b2411e45c13be586a440070551e930b1bbbba02003609b4c",
+      "bytes": 17929
+    }
+  ]
+}

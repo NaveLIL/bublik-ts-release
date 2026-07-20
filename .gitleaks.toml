@@ -1,0 +1,14 @@
+title = "Bublik public distribution Gitleaks policy"
+
+[extend]
+useDefault = true
+
+[[rules]]
+id = "generic-api-key"
+
+  [[rules.allowlists]]
+  description = "Deterministic obfuscator identifier misclassified as an API key"
+  condition = "AND"
+  regexTarget = "secret"
+  paths = ['''(^|/)dist-protected/modules/teams/voiceIntegration\.js$''']
+  regexes = ['''^_0x5df2e3=new$''']
