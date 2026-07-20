@@ -1,9 +1,9 @@
 {
   "schemaVersion": 2,
-  "releaseVersion": "1.0.0",
-  "createdAt": "2026-07-20T14:18:42.770Z",
-  "sourceRevision": "5d73d7910b945277ae6b7f44eb860eef6fde71ce",
-  "sourceTree": "7f7ce5b4a0dcde486073730aff3d5419417bc90e",
+  "releaseVersion": "1.0.1",
+  "createdAt": "2026-07-20T15:28:04.973Z",
+  "sourceRevision": "a99d63b53caf1ee0a743e45fc154bc27bcac1b47",
+  "sourceTree": "6e95f0d876cf81dacf2bc7aca678ce47aeb8ae09",
   "nodeMajor": 24,
   "buildImage": "node:24-alpine@sha256:a0b9bf06e4e6193cf7a0f58816cc935ff8c2a908f81e6f1a95432d679c54fbfd",
   "reproducibleBuildCount": 2,
@@ -11,9 +11,9 @@
   "runtimeDependencyTreeSha256": "8190dcf39cae25a0d865af10833e7241561043b5800846aef6a1172fb879f370",
   "artifactRoot": "dist-protected",
   "publishableFileCount": 197,
-  "publishableTreeSha256": "b0b406f6adda32a7ddb528e2210f60f67633040a239c254186037c404617051a",
+  "publishableTreeSha256": "fbcd7ef41038385ea32da9e3bd510ed48a2f30904d6284e8471a1553dc49bb2d",
   "artifactFileCount": 164,
-  "artifactTreeSha256": "140a9dc1c0ab79941a88e2c4e20c9c52143f39b60918a70b005497d308a0f278",
+  "artifactTreeSha256": "ca1f0eac0769a8915fc36408b188f5de6c98a82f5747a706ec219de6cb5c01b9",
   "toolchain": {
     "typescript": "5.9.3",
     "javascriptObfuscator": "4.2.2",
@@ -147,8 +147,8 @@
     },
     {
       "path": "dist-protected/core/GuildConfig.js",
-      "sha256": "1cff25201341dbf9a8decff273b6d089d4817bbfe8d336a30f57dc224079b03a",
-      "bytes": 32232
+      "sha256": "d9801eede1b24d2279c2d9e7ae0da5d7b55f21cf48367304062e3e24e99dee6f",
+      "bytes": 37313
     },
     {
       "path": "dist-protected/core/HealthHeartbeat.js",
@@ -467,8 +467,8 @@
     },
     {
       "path": "dist-protected/modules/economy/pb-tier-reconciliation.js",
-      "sha256": "aab17a5b9ee5bd117d83963b22abd731263554fd1000a7b732908531ff86902b",
-      "bytes": 20799
+      "sha256": "dd82bae5b54e9df6641a85002d6898e6a0d5ce2880d69eab0931931a45f63c7a",
+      "bytes": 19674
     },
     {
       "path": "dist-protected/modules/economy/perks.js",
@@ -512,8 +512,8 @@
     },
     {
       "path": "dist-protected/modules/economy/user-mutation-lock.js",
-      "sha256": "5b6c6bff424d12e54f42c5b205b239a854712f6229cd4956046638a860f18326",
-      "bytes": 4793
+      "sha256": "2ba1f52116acb3874b3e45eb4b08576fd4f67113c3ef55bda847c5be92052fe3",
+      "bytes": 4619
     },
     {
       "path": "dist-protected/modules/economy/voice-reward-metadata.js",
@@ -877,8 +877,8 @@
     },
     {
       "path": "dist-protected/modules/welcome/membershipStore.js",
-      "sha256": "b341ddf2822f56048efb3708d0b834eb05d809739872a79878f0640aebf88eac",
-      "bytes": 12200
+      "sha256": "72057e5458c3a6444db0ab07008c1e0143d853d6244edbb1e100257a216d0347",
+      "bytes": 13498
     },
     {
       "path": "dist-protected/modules/welcome/policy.js",
@@ -947,12 +947,12 @@
     },
     {
       "path": "package-lock.json",
-      "sha256": "10a26477524b01cf381b6273a8fe91848ddf47d08ead3dc7ac4d4655b0e71eb8",
+      "sha256": "dab393053555a8371065d8e25506897d92e1d34a930eee4a6b584b9f58952976",
       "bytes": 33012
     },
     {
       "path": "package.json",
-      "sha256": "f985dbbc4813f90501ea556f70337158afa3f47473646e9d20e4539716f43346",
+      "sha256": "a23e35edbcd4cee740c36b3683b87ac9f921565b5279d7c5161365617de756dc",
       "bytes": 998
     },
     {
