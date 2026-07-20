@@ -1,9 +1,9 @@
 {
   "schemaVersion": 2,
   "releaseVersion": "1.0.0",
-  "createdAt": "2026-07-20T13:59:12.194Z",
-  "sourceRevision": "768628f6e38ab9ed5d24a69ee3914b94e24a915e",
-  "sourceTree": "21c26c9b7e2634bfcce53802e782cc1f9547dc62",
+  "createdAt": "2026-07-20T14:18:42.770Z",
+  "sourceRevision": "5d73d7910b945277ae6b7f44eb860eef6fde71ce",
+  "sourceTree": "7f7ce5b4a0dcde486073730aff3d5419417bc90e",
   "nodeMajor": 24,
   "buildImage": "node:24-alpine@sha256:a0b9bf06e4e6193cf7a0f58816cc935ff8c2a908f81e6f1a95432d679c54fbfd",
   "reproducibleBuildCount": 2,
@@ -11,9 +11,9 @@
   "runtimeDependencyTreeSha256": "8190dcf39cae25a0d865af10833e7241561043b5800846aef6a1172fb879f370",
   "artifactRoot": "dist-protected",
   "publishableFileCount": 197,
-  "publishableTreeSha256": "09ed0f27d5c4e6c9e62b94d774e2a3876d95efdae6f6a5aea78269530efbc8bf",
+  "publishableTreeSha256": "b0b406f6adda32a7ddb528e2210f60f67633040a239c254186037c404617051a",
   "artifactFileCount": 164,
-  "artifactTreeSha256": "4a7c0c9a43f12852c29fa462208b9878624da9542b98db443b6b0565c6c161a4",
+  "artifactTreeSha256": "140a9dc1c0ab79941a88e2c4e20c9c52143f39b60918a70b005497d308a0f278",
   "toolchain": {
     "typescript": "5.9.3",
     "javascriptObfuscator": "4.2.2",
@@ -117,8 +117,8 @@
     },
     {
       "path": "dist-protected/config.js",
-      "sha256": "b27aecf3e7f48e876c8de1ef99f1d2ac95cf4d85733dab2634f79f449ec3b530",
-      "bytes": 9403
+      "sha256": "03272a545c1cbe3f9ed6f77b68fbc8fe5852dbae1df250a9e776d52886a48e14",
+      "bytes": 9315
     },
     {
       "path": "dist-protected/core/CommandRegistry.js",
@@ -167,8 +167,8 @@
     },
     {
       "path": "dist-protected/core/Logger.js",
-      "sha256": "570d370879e8c3602ffd14a9a2e70b08744ad3ebaa4b1e5d44c0e5ac287542d8",
-      "bytes": 17553
+      "sha256": "f23956e306c6e6547ea044049ca977dd7e5b4676bfd875ae37b9a21fdb3612ae",
+      "bytes": 18451
     },
     {
       "path": "dist-protected/core/MemberRoleLock.js",
@@ -252,8 +252,8 @@
     },
     {
       "path": "dist-protected/modules/br/index.js",
-      "sha256": "9bf33bf0224ba8fcaf293f66af99de65d85865353cc3415c9aa6f17b044a2f32",
-      "bytes": 31917
+      "sha256": "828c3d8fe71d4a8acbc7060de45c8cf71a2d58a9d662f1507608f3a901472a03",
+      "bytes": 30554
     },
     {
       "path": "dist-protected/modules/br/policy.js",
@@ -437,8 +437,8 @@
     },
     {
       "path": "dist-protected/modules/economy/index.js",
-      "sha256": "e518cd8ed867167d16f153a4e48b97c861dbef3a1de618fcf982f8f60bcccc8c",
-      "bytes": 45207
+      "sha256": "a874d4e75a4762bb5598bc2fc394cfb3301a47d1a2b04849f3a2fd2a42bc27df",
+      "bytes": 48133
     },
     {
       "path": "dist-protected/modules/economy/inventory.js",
@@ -562,8 +562,8 @@
     },
     {
       "path": "dist-protected/modules/general/index.js",
-      "sha256": "96315c8c50837e35b32298112d3b2090e82d100c1aba9be46de0143f15848dee",
-      "bytes": 6812
+      "sha256": "9b396f1d70894ebf4917639b34cc65c68e794b41dfa9fa65be7389b7a3fd08a0",
+      "bytes": 6807
     },
     {
       "path": "dist-protected/modules/info/commands/info.js",
@@ -572,8 +572,8 @@
     },
     {
       "path": "dist-protected/modules/info/index.js",
-      "sha256": "7d71353f61f3fb7f709e7f760f46400612e7044245536c87f00d536dfeb5b70c",
-      "bytes": 5920
+      "sha256": "52b8baa9e0365ccc5decfe0ff799cfe3fb531f3a8212830655f2a831feb52f13",
+      "bytes": 5880
     },
     {
       "path": "dist-protected/modules/regbattle/commands/regbattle.js",
@@ -607,8 +607,8 @@
     },
     {
       "path": "dist-protected/modules/regbattle/index.js",
-      "sha256": "117f00fc3235921da8c49e62d6d80cb8ef657bb03d27786fc7e050d852f31746",
-      "bytes": 16904
+      "sha256": "d0d24fe708ec6608b96c0fad5d40b2e7ec5daee6cc02c26050e08814ca804586",
+      "bytes": 18731
     },
     {
       "path": "dist-protected/modules/regbattle/integrityPolicy.js",
@@ -707,8 +707,8 @@
     },
     {
       "path": "dist-protected/modules/teams/index.js",
-      "sha256": "cf5e5749366028252da2b4874528ffcd474ed3478112f3ac2045902d8f291fa8",
-      "bytes": 15438
+      "sha256": "e7415c2ac9e965e337274b7ca1c20a7bffa3c77f16768a18c7fefa9ae5c1dc7e",
+      "bytes": 13670
     },
     {
       "path": "dist-protected/modules/teams/management.js",
@@ -772,8 +772,8 @@
     },
     {
       "path": "dist-protected/modules/tempvoice/index.js",
-      "sha256": "bef508cffcdfbe8e4208d228902a2b0c71f4dcb78d1873f4658446b5b770c3bc",
-      "bytes": 19661
+      "sha256": "4f0a27c1e7794c66926793b02e95b098be559b961b62b198ecdfb4b365b8579e",
+      "bytes": 20331
     },
     {
       "path": "dist-protected/modules/tempvoice/lifecycle.js",
@@ -827,8 +827,8 @@
     },
     {
       "path": "dist-protected/modules/vacation/index.js",
-      "sha256": "f4fe67f78d943af8bdeca89396009c5a313af8d8fbcb493440f65d069e7184b8",
-      "bytes": 11494
+      "sha256": "b0b5bd02a57a88e27fb0ee80dcde92ae4e0aafe973aa98c2f723bc4597ea7df1",
+      "bytes": 10368
     },
     {
       "path": "dist-protected/modules/vacation/saga.js",
@@ -867,8 +867,8 @@
     },
     {
       "path": "dist-protected/modules/welcome/index.js",
-      "sha256": "6f84069bad3b7e322a4f8cb226497541fa0c15f3b2499f2975d29f417f419618",
-      "bytes": 86789
+      "sha256": "c2b5822a145494198edd177aa95854579b9947db58510642f14defd0e42b9917",
+      "bytes": 88849
     },
     {
       "path": "dist-protected/modules/welcome/lifecycleLock.js",
@@ -937,13 +937,13 @@
     },
     {
       "path": "locales/en.json",
-      "sha256": "40d7fa01fbcab5319cd30f8d6a8c3d39fc39e7294f6966763646b6cbc248c4cf",
-      "bytes": 107175
+      "sha256": "1dfa22a3508f072c5fef091295201d688fc48abccbec8782134925f8e2318412",
+      "bytes": 107179
     },
     {
       "path": "locales/ru.json",
-      "sha256": "dc2a6e6acf2de0a8c4717bcc8cdf5e5249319c43e6676454412c2766363454b2",
-      "bytes": 148556
+      "sha256": "55b4a79a39760a0575e71781c393138e98c73397e542b9cd0aac4f05de08471a",
+      "bytes": 148560
     },
     {
       "path": "package-lock.json",
