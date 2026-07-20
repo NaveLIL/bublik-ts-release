@@ -1,19 +1,19 @@
 {
   "schemaVersion": 2,
-  "releaseVersion": "1.0.2",
-  "createdAt": "2026-07-20T17:07:39.836Z",
-  "sourceRevision": "7a67bfa426917b717f6dc91f1df27db5fc78655d",
-  "sourceTree": "f529baf8703b6825183217dddf7340b0e9f4d088",
+  "releaseVersion": "1.0.3",
+  "createdAt": "2026-07-20T18:11:55.263Z",
+  "sourceRevision": "6143a919c803e874bbd8787197b19a61017a8f0b",
+  "sourceTree": "0057b462b23414f97cdf6892e0217adf5ca66309",
   "nodeMajor": 24,
   "buildImage": "node:24-alpine@sha256:a0b9bf06e4e6193cf7a0f58816cc935ff8c2a908f81e6f1a95432d679c54fbfd",
   "reproducibleBuildCount": 2,
   "runtimeDependencyCount": 77,
   "runtimeDependencyTreeSha256": "8190dcf39cae25a0d865af10833e7241561043b5800846aef6a1172fb879f370",
   "artifactRoot": "dist-protected",
-  "publishableFileCount": 200,
-  "publishableTreeSha256": "fca67dfc0bc526dbfc51aa34ab0ac3ea5763784c81508ad0c144e8749cd38622",
-  "artifactFileCount": 167,
-  "artifactTreeSha256": "e4c3ec9bd66fc983e98756069cd5e0360fcfdeb49fc78ebef6ddef724b97d212",
+  "publishableFileCount": 201,
+  "publishableTreeSha256": "1c1f024067bfda4f837c9ea44056cb1f558d87c7ba4ea5b3c55acf94ba357a1f",
+  "artifactFileCount": 168,
+  "artifactTreeSha256": "54a337282e236ba56448f838a48353f8e10475128f41364bd2f4fda45d59356b",
   "toolchain": {
     "typescript": "5.9.3",
     "javascriptObfuscator": "4.2.2",
@@ -77,8 +77,8 @@
     },
     {
       "path": "CHANGELOG.md",
-      "sha256": "2958f61d01f1cc6ed64656e5b21f0aacfdb3f12549eea67cfacb2d5e86b0e53a",
-      "bytes": 1702
+      "sha256": "b25c73223968bc13163f10dc2348198baffa0d040912a31d678a39fbcd443bec",
+      "bytes": 2465
     },
     {
       "path": "CONTRIBUTING.md",
@@ -642,8 +642,8 @@
     },
     {
       "path": "dist-protected/modules/regbattle/pinger.js",
-      "sha256": "c89d5df052ade18bace311fe66f6a39271af506a9310f5de5edab8475182c7a8",
-      "bytes": 93447
+      "sha256": "efd8c70842ad9ac205da87a162d8f350f9d5a4d6ab5f71c18a2872c62e5d6102",
+      "bytes": 98271
     },
     {
       "path": "dist-protected/modules/regbattle/pingerCooldown.js",
@@ -651,9 +651,14 @@
       "bytes": 19854
     },
     {
+      "path": "dist-protected/modules/regbattle/pingerMessages.js",
+      "sha256": "9a2285770b0e89d834afd3d8be47d8dfafb1329e3b185291e6eddf9126804da1",
+      "bytes": 4736
+    },
+    {
       "path": "dist-protected/modules/regbattle/pingerPolicy.js",
-      "sha256": "36f0a82ac571962c43a327cd5726a2539eb02d8abbee1e3bf259cfca76579e01",
-      "bytes": 14500
+      "sha256": "a91af17b6e69bb6cae04c47f3334fd666533c8a7f755db2fb4753bd8326e9c52",
+      "bytes": 15098
     },
     {
       "path": "dist-protected/modules/regbattle/reprimandScheduler.js",
@@ -962,12 +967,12 @@
     },
     {
       "path": "package-lock.json",
-      "sha256": "34c8fe7920b0edd0a64221ff9fe59bebefa3c58dc4f824e0b9fdb5cc8448da65",
+      "sha256": "7ebe70ac3c58747d19829b5ae4f17c5a03a5f0a3e9bd251bc90b0bd14361dd79",
       "bytes": 33012
     },
     {
       "path": "package.json",
-      "sha256": "8df755f512838432d12e1357d07c5434d8a2504272d4c94869cbee3e26900f54",
+      "sha256": "38d87ecbb2f8d039359aa8d8d1f67b28e564c01b61542b786f13c747d3335db8",
       "bytes": 998
     },
     {
