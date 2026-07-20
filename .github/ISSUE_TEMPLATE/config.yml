@@ -1,0 +1,8 @@
+blank_issues_enabled: false
+contact_links:
+  - name: Приватный отчёт об уязвимости
+    url: https://github.com/NaveLIL/bublik-ts/security/advisories/new
+    about: Не публикуйте сведения об уязвимости в обычном issue.
+  - name: Правила поддержки
+    url: https://github.com/NaveLIL/bublik-ts/blob/main/SUPPORT.md
+    about: Какие данные приложить и что нельзя публиковать.

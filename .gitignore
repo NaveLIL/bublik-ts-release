@@ -1,0 +1,46 @@
+# Dependencies and generated local output
+node_modules/
+dist/
+coverage/
+*.tsbuildinfo
+
+# Private source and tests are never part of the public distribution
+src/
+tests/
+
+# Secrets and local overrides
+.env
+.env.*
+!.env.example
+release.env
+release.env.*
+.release.env
+.release.env.*
+.envrc
+.npmrc
+
+# Runtime state and backups
+logs/
+data/
+backup/
+backups/
+*.dump
+*.dump.*
+*.backup
+*.bak
+*.rdb
+*.aof
+*.aof.*
+*.tar
+*.tar.gz
+
+# Source/build metadata must not accompany the protected runtime
+*.map
+*.d.ts
+*.d.ts.map
+
+# Editor and operating-system state
+.idea/
+.vscode/
+.DS_Store
+Thumbs.db

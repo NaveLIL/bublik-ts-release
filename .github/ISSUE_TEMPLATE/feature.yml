@@ -1,0 +1,42 @@
+name: Feature request
+description: Предложить улучшение Bublik
+title: "[Feature]: "
+labels:
+  - enhancement
+body:
+  - type: dropdown
+    id: area
+    attributes:
+      label: Направление
+      options:
+        - RegBattle / ПБ
+        - Economy
+        - Onboarding
+        - Voice
+        - Moderation integration
+        - Dashboard
+        - Deployment / reliability
+        - Другое
+    validations:
+      required: true
+  - type: textarea
+    id: problem
+    attributes:
+      label: Какую проблему это решает
+    validations:
+      required: true
+  - type: textarea
+    id: proposal
+    attributes:
+      label: Предлагаемое поведение
+    validations:
+      required: true
+  - type: textarea
+    id: alternatives
+    attributes:
+      label: Рассмотренные альтернативы
+  - type: textarea
+    id: compatibility
+    attributes:
+      label: Совместимость
+      description: Как сохранить существующие настройки серверов и данные?
