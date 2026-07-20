@@ -1,6 +1,6 @@
 # Bublik Bot
 
-[![Distribution CI](https://github.com/NaveLIL/bublik-ts/actions/workflows/distribution-ci.yml/badge.svg)](https://github.com/NaveLIL/bublik-ts/actions/workflows/distribution-ci.yml)
+[![Distribution CI](https://github.com/NaveLIL/bublik-ts-release/actions/workflows/distribution-ci.yml/badge.svg)](https://github.com/NaveLIL/bublik-ts-release/actions/workflows/distribution-ci.yml)
 
 Bublik — модульный Discord-бот для управления сообществом: полковые бои War Thunder, голосовые каналы, команды, экономика, онбординг, отпуска и расписание боевых рейтингов.
 
@@ -91,11 +91,15 @@ docker build --tag bublik-runtime:local .
 
 ## Поддержка и безопасность
 
-- [Отчёт об ошибке](https://github.com/NaveLIL/bublik-ts/issues/new?template=bug.yml)
-- [Предложение функции](https://github.com/NaveLIL/bublik-ts/issues/new?template=feature.yml)
+- [Отчёт об ошибке](https://github.com/NaveLIL/bublik-ts-release/issues/new?template=bug.yml)
+- [Предложение функции](https://github.com/NaveLIL/bublik-ts-release/issues/new?template=feature.yml)
 - [Правила поддержки](SUPPORT.md)
 - [Приватный отчёт об уязвимости](SECURITY.md)
 - [Правила участия](CONTRIBUTING.md)
 - [Журнал изменений](CHANGELOG.md)
 
-Пакет помечен как `UNLICENSED`. Публичная доступность distribution не означает публикацию исходного кода или переход проекта на open-source модель.
+## Лицензия
+
+Оригинальные компоненты Bublik распространяются по [PolyForm Shield License 1.0.0](LICENSE). Лицензия разрешает использование, изменение и распространение для целей, не конкурирующих с Bublik, но запрещает создавать на его основе конкурирующий продукт или сервис. Это не open-source лицензия, и она не требует публикации закрытого TypeScript-кода.
+
+Сторонние зависимости и системные пакеты сохраняют собственные лицензии; PolyForm Shield не заменяет и не ограничивает предоставленные ими права.

@@ -6,7 +6,7 @@
 
 ## Как сообщить об уязвимости
 
-Не создавайте публичный issue. Используйте [приватный отчёт GitHub](https://github.com/NaveLIL/bublik-ts/security/advisories/new).
+Не создавайте публичный issue. Используйте [приватный отчёт GitHub](https://github.com/NaveLIL/bublik-ts-release/security/advisories/new).
 
 Укажите:
 

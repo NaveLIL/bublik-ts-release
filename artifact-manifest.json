@@ -1,9 +1,9 @@
 {
   "schemaVersion": 2,
   "releaseVersion": "1.0.0",
-  "createdAt": "2026-07-20T11:21:25.892Z",
-  "sourceRevision": "8f1ee22f51fd5f1ef214e235e6992e24896f04de",
-  "sourceTree": "2bf472af5cf88a3c67de6bccb3aaf4bc2987bab6",
+  "createdAt": "2026-07-20T13:59:12.194Z",
+  "sourceRevision": "768628f6e38ab9ed5d24a69ee3914b94e24a915e",
+  "sourceTree": "21c26c9b7e2634bfcce53802e782cc1f9547dc62",
   "nodeMajor": 24,
   "buildImage": "node:24-alpine@sha256:a0b9bf06e4e6193cf7a0f58816cc935ff8c2a908f81e6f1a95432d679c54fbfd",
   "reproducibleBuildCount": 2,
@@ -11,7 +11,7 @@
   "runtimeDependencyTreeSha256": "8190dcf39cae25a0d865af10833e7241561043b5800846aef6a1172fb879f370",
   "artifactRoot": "dist-protected",
   "publishableFileCount": 197,
-  "publishableTreeSha256": "8aa5de0708def4e29a35b35b9d233a3e18c331dde8e0c4ec80ffc68b50c79c65",
+  "publishableTreeSha256": "09ed0f27d5c4e6c9e62b94d774e2a3876d95efdae6f6a5aea78269530efbc8bf",
   "artifactFileCount": 164,
   "artifactTreeSha256": "4a7c0c9a43f12852c29fa462208b9878624da9542b98db443b6b0565c6c161a4",
   "toolchain": {
@@ -47,8 +47,8 @@
     },
     {
       "path": ".github/ISSUE_TEMPLATE/config.yml",
-      "sha256": "2429b2ba13766b7b00c2a1fd438d33e4ce46696067ab4fd8d5356e67fa752a9a",
-      "bytes": 496
+      "sha256": "ecde0f67b9a3dde6ec006626ebe6416b82c5546ad034cb54f8730cc91c13bcfa",
+      "bytes": 512
     },
     {
       "path": ".github/ISSUE_TEMPLATE/feature.yml",
@@ -59,11 +59,6 @@
       "path": ".github/PULL_REQUEST_TEMPLATE.md",
       "sha256": "60dc87e50a1f27e98e17efb7065edf1eeb16ae89a50dc97ca6591cb761f3131e",
       "bytes": 929
-    },
-    {
-      "path": ".github/dependabot.yml",
-      "sha256": "0de7bbd36fedaacdb82c96be5f646d3c6fd1c5bb6777e223b210652be965b734",
-      "bytes": 895
     },
     {
       "path": ".github/workflows/distribution-ci.yml",
@@ -92,18 +87,23 @@
     },
     {
       "path": "Dockerfile",
-      "sha256": "b569ed9f72f288c416b298553d319eaa09de389bfb776f1d881474ac5d8aedd8",
-      "bytes": 2377
+      "sha256": "f2d8d05bc4f850e8018bb535206fbfc485acf203e24b1e41467c7e8d66d135d7",
+      "bytes": 2385
+    },
+    {
+      "path": "LICENSE",
+      "sha256": "7165dd0a8076def9171a239a011d9c3ed282dece7b48d6cc2cbd72fd28a4c072",
+      "bytes": 5820
     },
     {
       "path": "README.md",
-      "sha256": "4a03486962e60063544b4c8ad17e278e2adc7d1c912d9bedc9ce9327d65b394f",
-      "bytes": 6471
+      "sha256": "c112557cb692f380711328b642c29b85f4a1e50b94bbef2b67bfbfd1a51666b3",
+      "bytes": 7118
     },
     {
       "path": "SECURITY.md",
-      "sha256": "84c6aee5f203583556d2eaf66962e5b9e756496347d9f93f12984e34215ae7c9",
-      "bytes": 1665
+      "sha256": "f3da56ad106a8bd32a4c273d33924fc27ee98bcd33eb4126768864f764194c0e",
+      "bytes": 1673
     },
     {
       "path": "SUPPORT.md",
@@ -947,13 +947,13 @@
     },
     {
       "path": "package-lock.json",
-      "sha256": "7f5f808e96a3b117d13421ed448d3e3ec4481c1f3bc727b312f3938d729450e2",
-      "bytes": 33000
+      "sha256": "10a26477524b01cf381b6273a8fe91848ddf47d08ead3dc7ac4d4655b0e71eb8",
+      "bytes": 33012
     },
     {
       "path": "package.json",
-      "sha256": "d2b5fabd107b9c972b641cb7e517cded329e9096a156b5904a9ad0bb20f904cd",
-      "bytes": 984
+      "sha256": "f985dbbc4813f90501ea556f70337158afa3f47473646e9d20e4539716f43346",
+      "bytes": 998
     },
     {
       "path": "prisma/migrations/20260719000000_baseline/migration.sql",
@@ -997,8 +997,8 @@
     },
     {
       "path": "scripts/verify-distribution.js",
-      "sha256": "d5895b699d02bb4e1933ec2d650513ce1d15b9ddbcf19d69e94b80011a07ef69",
-      "bytes": 23229
+      "sha256": "fcb6974f3e8bf733d35bf6898b60595a147d71892c6744700c0c8a57fab99c2d",
+      "bytes": 23214
     },
     {
       "path": "scripts/verify-pb-idle.js",
