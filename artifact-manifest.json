@@ -1,19 +1,19 @@
 {
   "schemaVersion": 2,
-  "releaseVersion": "1.0.3",
-  "createdAt": "2026-07-20T18:11:55.263Z",
-  "sourceRevision": "6143a919c803e874bbd8787197b19a61017a8f0b",
-  "sourceTree": "0057b462b23414f97cdf6892e0217adf5ca66309",
+  "releaseVersion": "1.0.4",
+  "createdAt": "2026-07-20T20:04:10.815Z",
+  "sourceRevision": "e05f352ee7259211c0527fb9b110479047ffe9c1",
+  "sourceTree": "3b2ccbf524957a861c04001a4a1dc5cf1c1d00e9",
   "nodeMajor": 24,
   "buildImage": "node:24-alpine@sha256:a0b9bf06e4e6193cf7a0f58816cc935ff8c2a908f81e6f1a95432d679c54fbfd",
   "reproducibleBuildCount": 2,
   "runtimeDependencyCount": 77,
   "runtimeDependencyTreeSha256": "8190dcf39cae25a0d865af10833e7241561043b5800846aef6a1172fb879f370",
   "artifactRoot": "dist-protected",
-  "publishableFileCount": 201,
-  "publishableTreeSha256": "1c1f024067bfda4f837c9ea44056cb1f558d87c7ba4ea5b3c55acf94ba357a1f",
-  "artifactFileCount": 168,
-  "artifactTreeSha256": "54a337282e236ba56448f838a48353f8e10475128f41364bd2f4fda45d59356b",
+  "publishableFileCount": 204,
+  "publishableTreeSha256": "284ece022d53bd02dcd5d6033d05288dff171080c70aa1b2a4a8df944548a840",
+  "artifactFileCount": 170,
+  "artifactTreeSha256": "9e00f58dc748b64f5ae071f05863195439d628b9a0f0aefe6b0355d3ceaed5e5",
   "toolchain": {
     "typescript": "5.9.3",
     "javascriptObfuscator": "4.2.2",
@@ -77,8 +77,8 @@
     },
     {
       "path": "CHANGELOG.md",
-      "sha256": "b25c73223968bc13163f10dc2348198baffa0d040912a31d678a39fbcd443bec",
-      "bytes": 2465
+      "sha256": "17ec76767e582b32fd9155611828014a30378101b084dc286f1b7df1650ea3a7",
+      "bytes": 3824
     },
     {
       "path": "CONTRIBUTING.md",
@@ -117,8 +117,8 @@
     },
     {
       "path": "dist-protected/config.js",
-      "sha256": "03272a545c1cbe3f9ed6f77b68fbc8fe5852dbae1df250a9e776d52886a48e14",
-      "bytes": 9315
+      "sha256": "3fa5ff1c0c2e502962fe2cbc398569d4dc9b6dfc6059a04b1e8893658a69a99a",
+      "bytes": 9219
     },
     {
       "path": "dist-protected/core/CommandRegistry.js",
@@ -582,8 +582,8 @@
     },
     {
       "path": "dist-protected/modules/regbattle/commands/regbattle.js",
-      "sha256": "5b97ebf7bae6083008c0e8f5ef34467f536baea037ad1c5df39a7572a87b842a",
-      "bytes": 81485
+      "sha256": "fbc8202bfb9b746667a7c99f8c9ed90c8bb3119a139d33bb79b1d73feea8420d",
+      "bytes": 94602
     },
     {
       "path": "dist-protected/modules/regbattle/constants.js",
@@ -602,13 +602,13 @@
     },
     {
       "path": "dist-protected/modules/regbattle/embeds.js",
-      "sha256": "2bda5b5ad3d60cf51211cd61fee4af5fa2f1a64d138fe65b599cb6435f3801a8",
-      "bytes": 82373
+      "sha256": "f047fdd0e87d5f40e56b1657549c44b2217ed7efbef50c0f028a0d8dfbc411c4",
+      "bytes": 96310
     },
     {
       "path": "dist-protected/modules/regbattle/handlers.js",
-      "sha256": "b63e7d285522c62a1929493c49763828e8b1cfb50f21529d6468ec0b4caf7cdf",
-      "bytes": 284252
+      "sha256": "125c8f452eabedde06a1d8d4db71009dbebb03c7747eb5845d6f7665dc3ef4dd",
+      "bytes": 286051
     },
     {
       "path": "dist-protected/modules/regbattle/index.js",
@@ -622,8 +622,8 @@
     },
     {
       "path": "dist-protected/modules/regbattle/lifecycle.js",
-      "sha256": "6287882673fab10406e65e4c17dc8f34cd6975fb9b3398e8ab75eca491c98b11",
-      "bytes": 294511
+      "sha256": "a0f2d7a0a40d3938341b04e85981c06538a2d9eeb5250da069c27574600b200e",
+      "bytes": 307929
     },
     {
       "path": "dist-protected/modules/regbattle/notifyToggle.js",
@@ -637,18 +637,23 @@
     },
     {
       "path": "dist-protected/modules/regbattle/pingEligibility.js",
-      "sha256": "85e4114b2ca0f56b22862ccd5e4de5d0ab9e757570779571006acc05d546f525",
-      "bytes": 15720
+      "sha256": "7c63dcff6fa026cecebc40eb8e801b21350f313968ffea8d62e1d6aa4e5473ae",
+      "bytes": 21411
     },
     {
       "path": "dist-protected/modules/regbattle/pinger.js",
-      "sha256": "efd8c70842ad9ac205da87a162d8f350f9d5a4d6ab5f71c18a2872c62e5d6102",
-      "bytes": 98271
+      "sha256": "9f1f84cb0bfe8b970169348e64d1d66b8ed99f83092b84f14e3c1311724650cd",
+      "bytes": 104659
     },
     {
       "path": "dist-protected/modules/regbattle/pingerCooldown.js",
       "sha256": "51972c2416c651f806eab686724dd32f69a1c8f6c8ff981327461d11a0b89014",
       "bytes": 19854
+    },
+    {
+      "path": "dist-protected/modules/regbattle/pingerDisplayStatus.js",
+      "sha256": "bdd22548322bd963be4b78e2a8b53a1b5e1587e9043b6a805b477888e48eb15b",
+      "bytes": 18697
     },
     {
       "path": "dist-protected/modules/regbattle/pingerMessages.js",
@@ -667,8 +672,8 @@
     },
     {
       "path": "dist-protected/modules/regbattle/safety.js",
-      "sha256": "46b3604363ac73ef05bda033b4df3dcfb04b5b0cf46434b851b51dca5b5fa81e",
-      "bytes": 15587
+      "sha256": "490d241c95d59b510f9bc2bb1a65152777b7ca242a51293770225dbef89900a3",
+      "bytes": 18478
     },
     {
       "path": "dist-protected/modules/regbattle/squadNumbering.js",
@@ -822,18 +827,18 @@
     },
     {
       "path": "dist-protected/modules/vacation/commands/vacation.js",
-      "sha256": "8d6a8914c82d11700232b3f75b051f6dc1aeb64a922f5aef98b1152bbd8181cf",
-      "bytes": 115451
+      "sha256": "24e5f7bd7c378c50c924e92f5fddf79aa6a4596d5b1da610e67c47d80ec18424",
+      "bytes": 132283
     },
     {
       "path": "dist-protected/modules/vacation/constants.js",
-      "sha256": "9402e5e29d324549628038f2e7f82385a8ce3fe3f59f14507075907ba0b52d63",
-      "bytes": 13795
+      "sha256": "f31efd429bd95210c15ee1f579dfff662c58cc8991983034dda5795e54e47f2b",
+      "bytes": 14204
     },
     {
       "path": "dist-protected/modules/vacation/database.js",
-      "sha256": "a444bd0677887e2b04503e49ee2450a19d1bf8ed3e6dda2f5fd15c291cb957de",
-      "bytes": 62839
+      "sha256": "3c9c298cdc3616bb4b939365f0961f46f329f32426b2e190662eef8e83ed823d",
+      "bytes": 75777
     },
     {
       "path": "dist-protected/modules/vacation/embeds.js",
@@ -851,24 +856,29 @@
       "bytes": 10368
     },
     {
+      "path": "dist-protected/modules/vacation/roleConfigLock.js",
+      "sha256": "26ad7f96d1ce2e762eaab36a1d9038c97e01b4b5a9e265cb00ea95b8ad9ea6dc",
+      "bytes": 4668
+    },
+    {
       "path": "dist-protected/modules/vacation/saga.js",
-      "sha256": "79c02cfdb2cc5d29f68e73b95b43b33ae0e353b03478e80a5fd0eeab2711f167",
-      "bytes": 38798
+      "sha256": "a18a7d3bc998cd2d3d88f3a6fa413d7e2519759c825ffae390067c9b747e7c8b",
+      "bytes": 51374
     },
     {
       "path": "dist-protected/modules/vacation/scheduler.js",
-      "sha256": "d63a317ded964f1d07fb71aa2c30abedaf96262cb9085e8680aa360d64d925e5",
-      "bytes": 42010
+      "sha256": "0ef1ed2b08a6b31a9e01a22d1131e440316bf698bfb9c60bd2409172df2e19e9",
+      "bytes": 45992
     },
     {
       "path": "dist-protected/modules/vacation/state.js",
-      "sha256": "0fbb7a32bb6e9b414a5169e614132de91300a2a9896d51b55d65d142bc83d325",
-      "bytes": 11730
+      "sha256": "20b836acc0b5ec0f0e07cc02d28491418cc7392ed2fbac4026b00b1114e6c6dd",
+      "bytes": 19785
     },
     {
       "path": "dist-protected/modules/vacation/utils.js",
-      "sha256": "827bd7474016d8f044e36a85bd16021b7f0fed341643dcc3707fdbfb798f0bd5",
-      "bytes": 30164
+      "sha256": "f78394691c44217b9d0570eaf3652bf3c4d10460c083ce378474a9f63ca1da03",
+      "bytes": 34569
     },
     {
       "path": "dist-protected/modules/welcome/commands/welcome.js",
@@ -957,22 +967,22 @@
     },
     {
       "path": "locales/en.json",
-      "sha256": "4d625ea02fdb0b0c57ef2595ccd14ab4afaeb1ead34c6d4d47b7dd7e81a58a3d",
-      "bytes": 107660
+      "sha256": "c85adc8eb59477e2f97456a43c6ea8b32e008c7367c0bfa0696361adad948e9c",
+      "bytes": 111230
     },
     {
       "path": "locales/ru.json",
-      "sha256": "f834ebb13f509ec125ca630b359f0cac553238bd5b7ebbc3bcde7e14ee631374",
-      "bytes": 149323
+      "sha256": "77df539f434badfc8c9dfbaf31e3b7858ffc58d841ecda5dd25ba2167b45f031",
+      "bytes": 154454
     },
     {
       "path": "package-lock.json",
-      "sha256": "7ebe70ac3c58747d19829b5ae4f17c5a03a5f0a3e9bd251bc90b0bd14361dd79",
+      "sha256": "6c7fd9360147e2702cd6a59ba8b24c4249df0c913b5b288b5261f0b2d08c047b",
       "bytes": 33012
     },
     {
       "path": "package.json",
-      "sha256": "38d87ecbb2f8d039359aa8d8d1f67b28e564c01b61542b786f13c747d3335db8",
+      "sha256": "c9478a200ae11ba0e574f775a177f177fb42fa0989cbab08dd58710a247c5814",
       "bytes": 998
     },
     {
@@ -986,14 +996,19 @@
       "bytes": 18293
     },
     {
+      "path": "prisma/migrations/20260721000000_vacation_role_snapshot_seal/migration.sql",
+      "sha256": "341fab363c466627b908648181245fa24eea8dcd2325f7b5eee253dc50ff0772",
+      "bytes": 505
+    },
+    {
       "path": "prisma/migrations/migration_lock.toml",
       "sha256": "d6bae7899f05da956e1070ba5703455503208ef79e161acb18c93bfe3c6cd236",
       "bytes": 127
     },
     {
       "path": "prisma/schema.prisma",
-      "sha256": "24a4f8e528c4ccd36bead9fad8957437abb71527d849da0bade50544541a7b49",
-      "bytes": 32479
+      "sha256": "8ac248c0deb397229a9989f6225d3bd6ea1581fc63d765852c51ab991487709e",
+      "bytes": 32564
     },
     {
       "path": "scripts/entrypoint.sh",
@@ -1002,8 +1017,8 @@
     },
     {
       "path": "scripts/snapshot-baseline-data.js",
-      "sha256": "aa14946f3adf21262aa7c7c76d3446b1ee162b24eaf0d641323a52d411c3d827",
-      "bytes": 65357
+      "sha256": "091af974ecdda0330ccf390cbb4ec475f7b6934a90686cfae363077de02bf646",
+      "bytes": 66136
     },
     {
       "path": "scripts/snapshot-redis-data.js",
