@@ -1,19 +1,19 @@
 {
   "schemaVersion": 2,
-  "releaseVersion": "1.0.4",
-  "createdAt": "2026-07-20T20:04:10.815Z",
-  "sourceRevision": "e05f352ee7259211c0527fb9b110479047ffe9c1",
-  "sourceTree": "3b2ccbf524957a861c04001a4a1dc5cf1c1d00e9",
+  "releaseVersion": "1.0.5",
+  "createdAt": "2026-07-26T22:29:52.000Z",
+  "sourceRevision": "52db4539ddf778596fb22bc4cf3bb9c998bb2c86",
+  "sourceTree": "a12a47240068e96ffa54385af91049e40fefeb4d",
   "nodeMajor": 24,
   "buildImage": "node:24-alpine@sha256:a0b9bf06e4e6193cf7a0f58816cc935ff8c2a908f81e6f1a95432d679c54fbfd",
   "reproducibleBuildCount": 2,
-  "runtimeDependencyCount": 77,
-  "runtimeDependencyTreeSha256": "8190dcf39cae25a0d865af10833e7241561043b5800846aef6a1172fb879f370",
+  "runtimeDependencyCount": 79,
+  "runtimeDependencyTreeSha256": "b74750ea100155a7483078c42836b7d1864ec2e58d893d2942fba5385862338e",
   "artifactRoot": "dist-protected",
-  "publishableFileCount": 204,
-  "publishableTreeSha256": "284ece022d53bd02dcd5d6033d05288dff171080c70aa1b2a4a8df944548a840",
-  "artifactFileCount": 170,
-  "artifactTreeSha256": "9e00f58dc748b64f5ae071f05863195439d628b9a0f0aefe6b0355d3ceaed5e5",
+  "publishableFileCount": 219,
+  "publishableTreeSha256": "94b2da05a2c4ddac20764b2c33c9c35f87a50ebc8be81fe9257a20be55ec6cd4",
+  "artifactFileCount": 181,
+  "artifactTreeSha256": "f435fbff16f86664bd5ef84c819e05ebbef082af6b7ec94b14eb9917225d3fec",
   "toolchain": {
     "typescript": "5.9.3",
     "javascriptObfuscator": "4.2.2",
@@ -59,6 +59,11 @@
       "path": ".github/PULL_REQUEST_TEMPLATE.md",
       "sha256": "60dc87e50a1f27e98e17efb7065edf1eeb16ae89a50dc97ca6591cb761f3131e",
       "bytes": 929
+    },
+    {
+      "path": ".github/dependabot.yml",
+      "sha256": "aed5a6e99b09ed02138f6b6d8dd2c37d6ae1141a6c5ab150df562580ef9c701c",
+      "bytes": 404
     },
     {
       "path": ".github/workflows/distribution-ci.yml",
@@ -112,13 +117,13 @@
     },
     {
       "path": "dist-protected/bot.js",
-      "sha256": "5c6ac737e26e65cf08435829a1ccb92c31f305654d7bbfe8b20bf76e4f08d0b8",
-      "bytes": 22082
+      "sha256": "bdbef88803ef146e8ab9bc657bb059daf5e26de5baa5c33bfff8ce5a35ca9200",
+      "bytes": 20083
     },
     {
       "path": "dist-protected/config.js",
-      "sha256": "3fa5ff1c0c2e502962fe2cbc398569d4dc9b6dfc6059a04b1e8893658a69a99a",
-      "bytes": 9219
+      "sha256": "cedd6f8b249aa620ba281429ffdfa02fa6e9b706d1c4860d974379259f5095f3",
+      "bytes": 9418
     },
     {
       "path": "dist-protected/core/CommandRegistry.js",
@@ -172,8 +177,8 @@
     },
     {
       "path": "dist-protected/core/Logger.js",
-      "sha256": "f23956e306c6e6547ea044049ca977dd7e5b4676bfd875ae37b9a21fdb3612ae",
-      "bytes": 18451
+      "sha256": "2ab849c410f2c31988a71d78c277ff404381ff427442b2cc2ee57d4c6c082c1f",
+      "bytes": 17573
     },
     {
       "path": "dist-protected/core/MemberRoleLock.js",
@@ -212,8 +217,8 @@
     },
     {
       "path": "dist-protected/core/Whitelist.js",
-      "sha256": "b1709f6b24b24e443d54a5f38536f20eab62cda70e883bbb4d733c5b66d4dd43",
-      "bytes": 25837
+      "sha256": "c55090ed5e8b74545f8b76711989b4302343947a217b09556de2d478198fe8d9",
+      "bytes": 24716
     },
     {
       "path": "dist-protected/core/index.js",
@@ -567,8 +572,8 @@
     },
     {
       "path": "dist-protected/modules/general/index.js",
-      "sha256": "9b396f1d70894ebf4917639b34cc65c68e794b41dfa9fa65be7389b7a3fd08a0",
-      "bytes": 6807
+      "sha256": "96315c8c50837e35b32298112d3b2090e82d100c1aba9be46de0143f15848dee",
+      "bytes": 6812
     },
     {
       "path": "dist-protected/modules/info/commands/info.js",
@@ -579,6 +584,61 @@
       "path": "dist-protected/modules/info/index.js",
       "sha256": "52b8baa9e0365ccc5decfe0ff799cfe3fb531f3a8212830655f2a831feb52f13",
       "bytes": 5880
+    },
+    {
+      "path": "dist-protected/modules/minecraft/commands/mc.js",
+      "sha256": "50ed063900f8caecaa67a76fab417d5d9876bd35f7797d6344fde05c8b363e8d",
+      "bytes": 54920
+    },
+    {
+      "path": "dist-protected/modules/minecraft/constants.js",
+      "sha256": "e6b717fbd72d689150be73f7cac41ad7b1a13859029dda513dcd4c1ca3dce1ab",
+      "bytes": 5418
+    },
+    {
+      "path": "dist-protected/modules/minecraft/database.js",
+      "sha256": "5000feeaae86419f0c681355e1481ed8c16635ec5904371b36ec0f6313d62a56",
+      "bytes": 69376
+    },
+    {
+      "path": "dist-protected/modules/minecraft/embeds.js",
+      "sha256": "d9f308e7dee2620ebecf715bbc48cc010ad015337c9ede5c174f36117eaa4029",
+      "bytes": 75508
+    },
+    {
+      "path": "dist-protected/modules/minecraft/index.js",
+      "sha256": "38651c8c8814b8873afcf1540d979096be362dc0685d1ec6295d85428d6e8978",
+      "bytes": 14111
+    },
+    {
+      "path": "dist-protected/modules/minecraft/services/chat-bridge.js",
+      "sha256": "9a0f3d5c80df1f99c09bbe66853d5746afaaad965341552ecf3950fa08b21cfc",
+      "bytes": 40097
+    },
+    {
+      "path": "dist-protected/modules/minecraft/services/economy-bridge.js",
+      "sha256": "2ff1c35d9101bbac71b3ee3b980d6f5c0dcf233edb7a2d19594502162246d46e",
+      "bytes": 44054
+    },
+    {
+      "path": "dist-protected/modules/minecraft/services/link-service.js",
+      "sha256": "2e59ccdfce0d1d2b76af939d8526a5c62b2467c6399c8be6f0749d9e35742d31",
+      "bytes": 23122
+    },
+    {
+      "path": "dist-protected/modules/minecraft/services/rcon-service.js",
+      "sha256": "bcb6f4652f410a28965632d7ef891894a7b417211da09ea8e61db23a12ffe431",
+      "bytes": 13106
+    },
+    {
+      "path": "dist-protected/modules/minecraft/services/shop-command-policy.js",
+      "sha256": "dd858772a77e37e16f715160fc3ecee69bcd2a087debd76aa7166f8c69fcdcc5",
+      "bytes": 12400
+    },
+    {
+      "path": "dist-protected/modules/minecraft/services/status-tracker.js",
+      "sha256": "93de2819410d16825a50c0a0188952f8317f611c4b92c0fb59f60c4edcce7032",
+      "bytes": 41352
     },
     {
       "path": "dist-protected/modules/regbattle/commands/regbattle.js",
@@ -622,8 +682,8 @@
     },
     {
       "path": "dist-protected/modules/regbattle/lifecycle.js",
-      "sha256": "a0f2d7a0a40d3938341b04e85981c06538a2d9eeb5250da069c27574600b200e",
-      "bytes": 307929
+      "sha256": "e2f4f3321c941d387c5e89f38cc61c41d0e2744ca4bcd08539cad986d7e363ba",
+      "bytes": 300708
     },
     {
       "path": "dist-protected/modules/regbattle/notifyToggle.js",
@@ -967,23 +1027,23 @@
     },
     {
       "path": "locales/en.json",
-      "sha256": "c85adc8eb59477e2f97456a43c6ea8b32e008c7367c0bfa0696361adad948e9c",
-      "bytes": 111230
+      "sha256": "249e830542959014dcf4e721ac8af8f3500e64a4fca69d2ca8d5e2e983c07fc0",
+      "bytes": 111428
     },
     {
       "path": "locales/ru.json",
-      "sha256": "77df539f434badfc8c9dfbaf31e3b7858ffc58d841ecda5dd25ba2167b45f031",
-      "bytes": 154454
+      "sha256": "e8e6883d285d5f299fb024ddf3ff6dca0aa7eb6541e2c28541e5218be5fe2c20",
+      "bytes": 154716
     },
     {
       "path": "package-lock.json",
-      "sha256": "6c7fd9360147e2702cd6a59ba8b24c4249df0c913b5b288b5261f0b2d08c047b",
-      "bytes": 33012
+      "sha256": "272a1ae2e65560978de8f10f498dc34b67c758fdde68ee6d2ea07ba3431f9238",
+      "bytes": 33702
     },
     {
       "path": "package.json",
-      "sha256": "c9478a200ae11ba0e574f775a177f177fb42fa0989cbab08dd58710a247c5814",
-      "bytes": 998
+      "sha256": "679565fec093d322bee5fbf033adec101d898bd8b88768ba5f7547ab72acadb3",
+      "bytes": 1027
     },
     {
       "path": "prisma/migrations/20260719000000_baseline/migration.sql",
@@ -1001,14 +1061,29 @@
       "bytes": 505
     },
     {
+      "path": "prisma/migrations/20260724180000_minecraft_foundation/migration.sql",
+      "sha256": "927706176c284d3c55e6381cfc4d6be27617dc50924134bc3486c7da4fc72531",
+      "bytes": 2608
+    },
+    {
+      "path": "prisma/migrations/20260724183500_add_chat_channel_id/migration.sql",
+      "sha256": "874634c6be9c31e01328825b691fd339f0dd346f7225662c6eff4e4e0bfa8140",
+      "bytes": 165
+    },
+    {
+      "path": "prisma/migrations/20260727000000_reconcile_runtime_schema/migration.sql",
+      "sha256": "8b681f2fe62227e7b6c5a45761e87b6d4460f8fe25061e4195400843e815495a",
+      "bytes": 503
+    },
+    {
       "path": "prisma/migrations/migration_lock.toml",
       "sha256": "d6bae7899f05da956e1070ba5703455503208ef79e161acb18c93bfe3c6cd236",
       "bytes": 127
     },
     {
       "path": "prisma/schema.prisma",
-      "sha256": "8ac248c0deb397229a9989f6225d3bd6ea1581fc63d765852c51ab991487709e",
-      "bytes": 32564
+      "sha256": "7a51f4a97a438a4256db8bdea6009c01c8c2e66ef1c0b55a1715be4d8277ec55",
+      "bytes": 34339
     },
     {
       "path": "scripts/entrypoint.sh",
@@ -1017,8 +1092,8 @@
     },
     {
       "path": "scripts/snapshot-baseline-data.js",
-      "sha256": "091af974ecdda0330ccf390cbb4ec475f7b6934a90686cfae363077de02bf646",
-      "bytes": 66136
+      "sha256": "a62a8ad4c5d73ea5b4fbea0c707b5914163e8f5c2702beccc707429e66d629a2",
+      "bytes": 67325
     },
     {
       "path": "scripts/snapshot-redis-data.js",
@@ -1032,8 +1107,8 @@
     },
     {
       "path": "scripts/verify-distribution.js",
-      "sha256": "fcb6974f3e8bf733d35bf6898b60595a147d71892c6744700c0c8a57fab99c2d",
-      "bytes": 23214
+      "sha256": "d3756aa88da59a4bbfc9144b17130866ccd87dbf37790e8a306b9a07a748399e",
+      "bytes": 23242
     },
     {
       "path": "scripts/verify-pb-idle.js",

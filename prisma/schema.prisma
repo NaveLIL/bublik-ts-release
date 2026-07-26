@@ -1016,3 +1016,62 @@ model CustomItemRequest {
   @@index([creatorId])
   @@map("custom_item_requests")
 }
+
+// --- Minecraft ---
+
+model MinecraftConfig {
+  id              String    @id @default(cuid())
+  guildId         String    @unique
+  statusChannelId String?
+  statusMessageId String?
+  chatChannelId   String?   // cross-chat: MC <-> Discord bridge
+  serverAddress   String    @default("play.erez.pro:25565")
+  serverName      String    @default("EREZCRAFT")
+  lastStatus      String?   // online | offline | degraded
+  lastAlertSentAt DateTime?
+  whitelistEnabled Boolean  @default(false)
+  playerRoleId    String?
+  createdAt       DateTime  @default(now())
+  updatedAt       DateTime  @updatedAt
+
+  @@map("minecraft_configs")
+}
+
+model MinecraftAccount {
+  id                String    @id @default(cuid())
+  guildId           String
+  discordId         String
+  minecraftUsername String
+  minecraftUuid     String?
+  linkCode          String?
+  linkCodeExpiresAt DateTime?
+  isLinked          Boolean   @default(false)
+  linkedAt          DateTime?
+  playtimeMinutes   Int       @default(0)
+  lastRewardAt      DateTime?
+  totalEarnedShekels Int      @default(0)
+  createdAt         DateTime  @default(now())
+  updatedAt         DateTime  @updatedAt
+
+  @@unique([guildId, discordId])
+  @@unique([guildId, minecraftUsername])
+  @@index([guildId, isLinked])
+  @@map("minecraft_accounts")
+}
+
+model MinecraftShopItem {
+  id           String   @id @default(cuid())
+  guildId      String
+  name         String
+  description  String?
+  priceShekels Int
+  rconCommand  String
+  iconEmoji    String   @default("📦")
+  category     String   @default("general") // general | create | resources | perks
+  isActive     Boolean  @default(true)
+  createdAt    DateTime @default(now())
+  updatedAt    DateTime @updatedAt
+
+  @@index([guildId, isActive])
+  @@map("minecraft_shop_items")
+}

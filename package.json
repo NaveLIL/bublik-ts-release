@@ -1,6 +1,6 @@
 {
   "name": "bublik-bot",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "Protected runtime distribution of the Bublik Discord bot",
   "author": "NaveLIL",
   "license": "SEE LICENSE IN LICENSE",
@@ -23,6 +23,7 @@
     "dotenv": "^16.4.5",
     "ioredis": "^5.4.1",
     "prisma": "^5.22.0",
+    "rcon-client": "^4.2.5",
     "winston": "^3.14.2",
     "winston-daily-rotate-file": "^5.0.0"
   },

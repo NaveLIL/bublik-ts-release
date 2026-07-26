@@ -55,9 +55,15 @@
     },
     "br": {
       "description": "Справочник техники War Thunder по боевым рейтингам"
+    },
+    "minecraft": {
+      "description": "Интеграция с Minecraft-сервером EREZCRAFT (Мониторинг, Онлайн, Аккаунты)"
     }
   },
   "commands": {
+    "mc": {
+      "description": "🎮 Команды модуля Minecraft (EREZCRAFT)"
+    },
     "info": {
       "description": "Открыть информационную панель бота"
     },
