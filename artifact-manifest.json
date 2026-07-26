@@ -1,9 +1,9 @@
 {
   "schemaVersion": 2,
   "releaseVersion": "1.0.5",
-  "createdAt": "2026-07-26T22:29:52.000Z",
-  "sourceRevision": "52db4539ddf778596fb22bc4cf3bb9c998bb2c86",
-  "sourceTree": "a12a47240068e96ffa54385af91049e40fefeb4d",
+  "createdAt": "2026-07-26T22:42:07.000Z",
+  "sourceRevision": "8053f88414c83ed6e2e878c91e31acbd66b3a83f",
+  "sourceTree": "e5b126c768e968671850d14db5d8cc2263ed448c",
   "nodeMajor": 24,
   "buildImage": "node:24-alpine@sha256:a0b9bf06e4e6193cf7a0f58816cc935ff8c2a908f81e6f1a95432d679c54fbfd",
   "reproducibleBuildCount": 2,
@@ -11,9 +11,9 @@
   "runtimeDependencyTreeSha256": "b74750ea100155a7483078c42836b7d1864ec2e58d893d2942fba5385862338e",
   "artifactRoot": "dist-protected",
   "publishableFileCount": 219,
-  "publishableTreeSha256": "94b2da05a2c4ddac20764b2c33c9c35f87a50ebc8be81fe9257a20be55ec6cd4",
+  "publishableTreeSha256": "e21f9835851b6ad482e4efef6d6e87bdf0ac6666041c4ef7dc8177c20bde868c",
   "artifactFileCount": 181,
-  "artifactTreeSha256": "f435fbff16f86664bd5ef84c819e05ebbef082af6b7ec94b14eb9917225d3fec",
+  "artifactTreeSha256": "2984678b816762c97d49e5b81fd9ac9e634189ebfb59835ecf51ddb37c2dfc4f",
   "toolchain": {
     "typescript": "5.9.3",
     "javascriptObfuscator": "4.2.2",
@@ -122,8 +122,8 @@
     },
     {
       "path": "dist-protected/config.js",
-      "sha256": "cedd6f8b249aa620ba281429ffdfa02fa6e9b706d1c4860d974379259f5095f3",
-      "bytes": 9418
+      "sha256": "a9f4e42276e18e8cf997779b1a3bc36810eb7e09d5773c530359f2f8b8d6e5b3",
+      "bytes": 10101
     },
     {
       "path": "dist-protected/core/CommandRegistry.js",
@@ -217,8 +217,8 @@
     },
     {
       "path": "dist-protected/core/Whitelist.js",
-      "sha256": "c55090ed5e8b74545f8b76711989b4302343947a217b09556de2d478198fe8d9",
-      "bytes": 24716
+      "sha256": "5ba2cb1703e2d04741680a54648a673728068efb44a40554791fe7ed15f29f89",
+      "bytes": 25360
     },
     {
       "path": "dist-protected/core/index.js",
