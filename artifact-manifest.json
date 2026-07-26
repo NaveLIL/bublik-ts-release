@@ -1,9 +1,9 @@
 {
   "schemaVersion": 2,
   "releaseVersion": "1.0.5",
-  "createdAt": "2026-07-26T22:52:34.000Z",
-  "sourceRevision": "862d0fb9a3595788c499cb5d5d7624d7c86ef913",
-  "sourceTree": "efbc628a678b22fe2376ffb2101dbdeea308bab9",
+  "createdAt": "2026-07-26T23:43:39.000Z",
+  "sourceRevision": "e3f77e8a5c522446c87fa6944074303bff874ace",
+  "sourceTree": "de22fc6ad37d69434d16fac4a3fa0a6ef250ec70",
   "nodeMajor": 24,
   "buildImage": "node:24-alpine@sha256:a0b9bf06e4e6193cf7a0f58816cc935ff8c2a908f81e6f1a95432d679c54fbfd",
   "reproducibleBuildCount": 2,
@@ -11,7 +11,7 @@
   "runtimeDependencyTreeSha256": "b74750ea100155a7483078c42836b7d1864ec2e58d893d2942fba5385862338e",
   "artifactRoot": "dist-protected",
   "publishableFileCount": 219,
-  "publishableTreeSha256": "11341a29d9ee265e9aac92fc56ff823919933739a42c9233dfa47d7b113c5afe",
+  "publishableTreeSha256": "ae9df6d808ddc650967a362255695c1fd93c86751d5f6c9d4b8b423afe38f2a5",
   "artifactFileCount": 181,
   "artifactTreeSha256": "2984678b816762c97d49e5b81fd9ac9e634189ebfb59835ecf51ddb37c2dfc4f",
   "toolchain": {
@@ -27,8 +27,8 @@
     },
     {
       "path": ".env.example",
-      "sha256": "493ea99de927ce90c8a28c85350e662fdfde1e2602583e080ff4fa11df2b96b1",
-      "bytes": 1924
+      "sha256": "cad63783b15985ca40a888c35259461d4cc2760447307b45c1f5027fa71fbd59",
+      "bytes": 2158
     },
     {
       "path": ".gitattributes",
@@ -82,8 +82,8 @@
     },
     {
       "path": "CHANGELOG.md",
-      "sha256": "17ec76767e582b32fd9155611828014a30378101b084dc286f1b7df1650ea3a7",
-      "bytes": 3824
+      "sha256": "3067c87cc3f2e8e4f55a94c3faac4b74ce22d3a482a40fbf47ee5d2aea150e79",
+      "bytes": 4457
     },
     {
       "path": "CONTRIBUTING.md",
@@ -1092,8 +1092,8 @@
     },
     {
       "path": "scripts/snapshot-baseline-data.js",
-      "sha256": "256cc2a94a350211974caf65bc1852d3dfee670739119f7301bc516c22925a79",
-      "bytes": 67615
+      "sha256": "9dbe215de4323f6648cf7d93f52b43f17c228825c2ed3388149c04fd3c6e44a4",
+      "bytes": 73311
     },
     {
       "path": "scripts/snapshot-redis-data.js",

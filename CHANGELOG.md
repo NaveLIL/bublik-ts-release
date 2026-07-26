@@ -6,6 +6,24 @@
 
 Новые изменения пока не добавлены.
 
+## [1.0.5] — 2026-07-27
+
+### Added
+
+- Restored and hardened the Minecraft account, shop and chat integration with
+  explicit fail-closed RCON configuration.
+- Added an operational database postflight profile for safe upgrades of an
+  already-running installation.
+
+### Fixed
+
+- Restored PB notifications, reserve invitations, squad numbering and cleanup,
+  while preserving ping-role and vacation-role provenance.
+- Prevented a valid populated `operation_claims` table from falsely blocking a
+  repeat production upgrade.
+- Added exact schema, migration, backup and runtime-integrity gates for the
+  protected production release.
+
 ## [1.0.4] — 2026-07-20
 
 ### Исправлено
