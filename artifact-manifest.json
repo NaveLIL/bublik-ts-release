@@ -1,9 +1,9 @@
 {
   "schemaVersion": 2,
   "releaseVersion": "1.0.5",
-  "createdAt": "2026-07-26T22:42:07.000Z",
-  "sourceRevision": "8053f88414c83ed6e2e878c91e31acbd66b3a83f",
-  "sourceTree": "e5b126c768e968671850d14db5d8cc2263ed448c",
+  "createdAt": "2026-07-26T22:52:34.000Z",
+  "sourceRevision": "862d0fb9a3595788c499cb5d5d7624d7c86ef913",
+  "sourceTree": "efbc628a678b22fe2376ffb2101dbdeea308bab9",
   "nodeMajor": 24,
   "buildImage": "node:24-alpine@sha256:a0b9bf06e4e6193cf7a0f58816cc935ff8c2a908f81e6f1a95432d679c54fbfd",
   "reproducibleBuildCount": 2,
@@ -11,7 +11,7 @@
   "runtimeDependencyTreeSha256": "b74750ea100155a7483078c42836b7d1864ec2e58d893d2942fba5385862338e",
   "artifactRoot": "dist-protected",
   "publishableFileCount": 219,
-  "publishableTreeSha256": "e21f9835851b6ad482e4efef6d6e87bdf0ac6666041c4ef7dc8177c20bde868c",
+  "publishableTreeSha256": "11341a29d9ee265e9aac92fc56ff823919933739a42c9233dfa47d7b113c5afe",
   "artifactFileCount": 181,
   "artifactTreeSha256": "2984678b816762c97d49e5b81fd9ac9e634189ebfb59835ecf51ddb37c2dfc4f",
   "toolchain": {
@@ -1092,8 +1092,8 @@
     },
     {
       "path": "scripts/snapshot-baseline-data.js",
-      "sha256": "a62a8ad4c5d73ea5b4fbea0c707b5914163e8f5c2702beccc707429e66d629a2",
-      "bytes": 67325
+      "sha256": "256cc2a94a350211974caf65bc1852d3dfee670739119f7301bc516c22925a79",
+      "bytes": 67615
     },
     {
       "path": "scripts/snapshot-redis-data.js",
