@@ -1,19 +1,19 @@
 {
   "schemaVersion": 2,
-  "releaseVersion": "1.0.0",
-  "createdAt": "2026-07-20T14:18:42.770Z",
-  "sourceRevision": "5d73d7910b945277ae6b7f44eb860eef6fde71ce",
-  "sourceTree": "7f7ce5b4a0dcde486073730aff3d5419417bc90e",
+  "releaseVersion": "1.0.5",
+  "createdAt": "2026-07-27T00:23:05.000Z",
+  "sourceRevision": "3d23cc993e269baf6b56969ed690ae9f36498ebb",
+  "sourceTree": "a7eed3edc9848931b82e9aefacd4b49df44619f6",
   "nodeMajor": 24,
   "buildImage": "node:24-alpine@sha256:a0b9bf06e4e6193cf7a0f58816cc935ff8c2a908f81e6f1a95432d679c54fbfd",
   "reproducibleBuildCount": 2,
-  "runtimeDependencyCount": 77,
-  "runtimeDependencyTreeSha256": "8190dcf39cae25a0d865af10833e7241561043b5800846aef6a1172fb879f370",
+  "runtimeDependencyCount": 79,
+  "runtimeDependencyTreeSha256": "b74750ea100155a7483078c42836b7d1864ec2e58d893d2942fba5385862338e",
   "artifactRoot": "dist-protected",
-  "publishableFileCount": 197,
-  "publishableTreeSha256": "b0b406f6adda32a7ddb528e2210f60f67633040a239c254186037c404617051a",
-  "artifactFileCount": 164,
-  "artifactTreeSha256": "140a9dc1c0ab79941a88e2c4e20c9c52143f39b60918a70b005497d308a0f278",
+  "publishableFileCount": 219,
+  "publishableTreeSha256": "b7f4f56427338a60d03bef3eae83448e61ac7cfc8f4bd15aba2e9182bbe434f5",
+  "artifactFileCount": 181,
+  "artifactTreeSha256": "7c9731c19d7735f267daa6d0ec6f06d010aaea213daa3d95b8ababb77d7b9b0c",
   "toolchain": {
     "typescript": "5.9.3",
     "javascriptObfuscator": "4.2.2",
@@ -27,8 +27,8 @@
     },
     {
       "path": ".env.example",
-      "sha256": "493ea99de927ce90c8a28c85350e662fdfde1e2602583e080ff4fa11df2b96b1",
-      "bytes": 1924
+      "sha256": "cad63783b15985ca40a888c35259461d4cc2760447307b45c1f5027fa71fbd59",
+      "bytes": 2158
     },
     {
       "path": ".gitattributes",
@@ -61,6 +61,11 @@
       "bytes": 929
     },
     {
+      "path": ".github/dependabot.yml",
+      "sha256": "aed5a6e99b09ed02138f6b6d8dd2c37d6ae1141a6c5ab150df562580ef9c701c",
+      "bytes": 404
+    },
+    {
       "path": ".github/workflows/distribution-ci.yml",
       "sha256": "04dcf6fdab69a70088de4e8788a8ce7d4d4f59532325e0286cb6c8bf70b6eb43",
       "bytes": 7938
@@ -77,8 +82,8 @@
     },
     {
       "path": "CHANGELOG.md",
-      "sha256": "d0a13d80af40621996aa85b957da831a56903f7774fe646b0f91ccb81f5ad93b",
-      "bytes": 707
+      "sha256": "3067c87cc3f2e8e4f55a94c3faac4b74ce22d3a482a40fbf47ee5d2aea150e79",
+      "bytes": 4457
     },
     {
       "path": "CONTRIBUTING.md",
@@ -112,13 +117,13 @@
     },
     {
       "path": "dist-protected/bot.js",
-      "sha256": "5c6ac737e26e65cf08435829a1ccb92c31f305654d7bbfe8b20bf76e4f08d0b8",
-      "bytes": 22082
+      "sha256": "bdbef88803ef146e8ab9bc657bb059daf5e26de5baa5c33bfff8ce5a35ca9200",
+      "bytes": 20083
     },
     {
       "path": "dist-protected/config.js",
-      "sha256": "03272a545c1cbe3f9ed6f77b68fbc8fe5852dbae1df250a9e776d52886a48e14",
-      "bytes": 9315
+      "sha256": "a9f4e42276e18e8cf997779b1a3bc36810eb7e09d5773c530359f2f8b8d6e5b3",
+      "bytes": 10101
     },
     {
       "path": "dist-protected/core/CommandRegistry.js",
@@ -142,13 +147,18 @@
     },
     {
       "path": "dist-protected/core/EventHandler.js",
-      "sha256": "e59b74d96be2332b9d225201811bff74207b49a0583194a33136459135245953",
-      "bytes": 21157
+      "sha256": "cd355c899564e4db09ec458e3349ba07ee4fd113f5b6785d6290113290c3b1d1",
+      "bytes": 25182
     },
     {
       "path": "dist-protected/core/GuildConfig.js",
-      "sha256": "1cff25201341dbf9a8decff273b6d089d4817bbfe8d336a30f57dc224079b03a",
-      "bytes": 32232
+      "sha256": "d9801eede1b24d2279c2d9e7ae0da5d7b55f21cf48367304062e3e24e99dee6f",
+      "bytes": 37313
+    },
+    {
+      "path": "dist-protected/core/GuildMemberSnapshot.js",
+      "sha256": "75df5e7b9fae3151b4ecf86a3c719e4acda0664e3bd74de0330c9a7f11b56944",
+      "bytes": 26040
     },
     {
       "path": "dist-protected/core/HealthHeartbeat.js",
@@ -167,8 +177,8 @@
     },
     {
       "path": "dist-protected/core/Logger.js",
-      "sha256": "f23956e306c6e6547ea044049ca977dd7e5b4676bfd875ae37b9a21fdb3612ae",
-      "bytes": 18451
+      "sha256": "2ab849c410f2c31988a71d78c277ff404381ff427442b2cc2ee57d4c6c082c1f",
+      "bytes": 17573
     },
     {
       "path": "dist-protected/core/MemberRoleLock.js",
@@ -207,8 +217,8 @@
     },
     {
       "path": "dist-protected/core/Whitelist.js",
-      "sha256": "b1709f6b24b24e443d54a5f38536f20eab62cda70e883bbb4d733c5b66d4dd43",
-      "bytes": 25837
+      "sha256": "5ba2cb1703e2d04741680a54648a673728068efb44a40554791fe7ed15f29f89",
+      "bytes": 25360
     },
     {
       "path": "dist-protected/core/index.js",
@@ -367,8 +377,8 @@
     },
     {
       "path": "dist-protected/modules/economy/commands/raid.js",
-      "sha256": "7c172a0b8a13e3f01c56ea6c9560a0a68381d7f91f23f43cf9ade37d5f4e0055",
-      "bytes": 27666
+      "sha256": "cb32862edac9cd2d365e57e125fa774e78d1f26a140d2e899086e7fc2c332da2",
+      "bytes": 26253
     },
     {
       "path": "dist-protected/modules/economy/commands/rob.js",
@@ -467,8 +477,8 @@
     },
     {
       "path": "dist-protected/modules/economy/pb-tier-reconciliation.js",
-      "sha256": "aab17a5b9ee5bd117d83963b22abd731263554fd1000a7b732908531ff86902b",
-      "bytes": 20799
+      "sha256": "dd82bae5b54e9df6641a85002d6898e6a0d5ce2880d69eab0931931a45f63c7a",
+      "bytes": 19674
     },
     {
       "path": "dist-protected/modules/economy/perks.js",
@@ -487,8 +497,8 @@
     },
     {
       "path": "dist-protected/modules/economy/raid.js",
-      "sha256": "20295e884ac5cc8393488dd4e27e07f1d08445673acd832d30c83dafcb9b09f6",
-      "bytes": 146820
+      "sha256": "69f5cb2a70104dbd62048d6f284619d5ab99e9dd2b3554d0f46d25b5e67cc599",
+      "bytes": 158828
     },
     {
       "path": "dist-protected/modules/economy/random.js",
@@ -512,8 +522,8 @@
     },
     {
       "path": "dist-protected/modules/economy/user-mutation-lock.js",
-      "sha256": "5b6c6bff424d12e54f42c5b205b239a854712f6229cd4956046638a860f18326",
-      "bytes": 4793
+      "sha256": "2ba1f52116acb3874b3e45eb4b08576fd4f67113c3ef55bda847c5be92052fe3",
+      "bytes": 4619
     },
     {
       "path": "dist-protected/modules/economy/voice-reward-metadata.js",
@@ -522,8 +532,8 @@
     },
     {
       "path": "dist-protected/modules/economy/voice-tracker.js",
-      "sha256": "b60db140b7765e198ae8594aedbf4cd2c2f29c5f35ead4dd397de6d966219fcc",
-      "bytes": 206057
+      "sha256": "90ece7769fe59ae59c89e30ebe4c9bb26c3b52ab6a5c961170043e0bf7d920c2",
+      "bytes": 198559
     },
     {
       "path": "dist-protected/modules/economy/wanted.js",
@@ -562,8 +572,8 @@
     },
     {
       "path": "dist-protected/modules/general/index.js",
-      "sha256": "9b396f1d70894ebf4917639b34cc65c68e794b41dfa9fa65be7389b7a3fd08a0",
-      "bytes": 6807
+      "sha256": "96315c8c50837e35b32298112d3b2090e82d100c1aba9be46de0143f15848dee",
+      "bytes": 6812
     },
     {
       "path": "dist-protected/modules/info/commands/info.js",
@@ -576,9 +586,64 @@
       "bytes": 5880
     },
     {
+      "path": "dist-protected/modules/minecraft/commands/mc.js",
+      "sha256": "50ed063900f8caecaa67a76fab417d5d9876bd35f7797d6344fde05c8b363e8d",
+      "bytes": 54920
+    },
+    {
+      "path": "dist-protected/modules/minecraft/constants.js",
+      "sha256": "6e7d27a4321e3c04d6b544bd4d929bf02f412f063816ef1a8353f2df5cf79b23",
+      "bytes": 6757
+    },
+    {
+      "path": "dist-protected/modules/minecraft/database.js",
+      "sha256": "5000feeaae86419f0c681355e1481ed8c16635ec5904371b36ec0f6313d62a56",
+      "bytes": 69376
+    },
+    {
+      "path": "dist-protected/modules/minecraft/embeds.js",
+      "sha256": "d9f308e7dee2620ebecf715bbc48cc010ad015337c9ede5c174f36117eaa4029",
+      "bytes": 75508
+    },
+    {
+      "path": "dist-protected/modules/minecraft/index.js",
+      "sha256": "fa29705f1c2b29c8c3c61588b372d5290d2f15951340894ff6be0558826f4002",
+      "bytes": 17226
+    },
+    {
+      "path": "dist-protected/modules/minecraft/services/chat-bridge.js",
+      "sha256": "113713d8562189ee1a871852edf504301d991b1cc2f7e1882b79dd1aa844c3f9",
+      "bytes": 42540
+    },
+    {
+      "path": "dist-protected/modules/minecraft/services/economy-bridge.js",
+      "sha256": "2ff1c35d9101bbac71b3ee3b980d6f5c0dcf233edb7a2d19594502162246d46e",
+      "bytes": 44054
+    },
+    {
+      "path": "dist-protected/modules/minecraft/services/link-service.js",
+      "sha256": "2e59ccdfce0d1d2b76af939d8526a5c62b2467c6399c8be6f0749d9e35742d31",
+      "bytes": 23122
+    },
+    {
+      "path": "dist-protected/modules/minecraft/services/rcon-service.js",
+      "sha256": "b1f7430f06174d3ea9bfdb64a8b2f1891745006a3ee7a6235d4f87389c585e07",
+      "bytes": 14051
+    },
+    {
+      "path": "dist-protected/modules/minecraft/services/shop-command-policy.js",
+      "sha256": "dd858772a77e37e16f715160fc3ecee69bcd2a087debd76aa7166f8c69fcdcc5",
+      "bytes": 12400
+    },
+    {
+      "path": "dist-protected/modules/minecraft/services/status-tracker.js",
+      "sha256": "c0625d3368541482c617ecaaab07596aaf797fbdf837e8ec447fe3e88fd2ccd6",
+      "bytes": 36549
+    },
+    {
       "path": "dist-protected/modules/regbattle/commands/regbattle.js",
-      "sha256": "5b97ebf7bae6083008c0e8f5ef34467f536baea037ad1c5df39a7572a87b842a",
-      "bytes": 81485
+      "sha256": "fbc8202bfb9b746667a7c99f8c9ed90c8bb3119a139d33bb79b1d73feea8420d",
+      "bytes": 94602
     },
     {
       "path": "dist-protected/modules/regbattle/constants.js",
@@ -587,23 +652,23 @@
     },
     {
       "path": "dist-protected/modules/regbattle/database.js",
-      "sha256": "119e3bf9ec2ad918fba7f819b093a8d112994acd4f9d8c38fd15f6a4fee04b1f",
-      "bytes": 33642
+      "sha256": "db98dc0f1421fba1cc4a3b73060787d91dfe7e92c932cb6b7f859e0ce5dc417e",
+      "bytes": 36039
     },
     {
       "path": "dist-protected/modules/regbattle/dmPingCooldown.js",
-      "sha256": "56a7542b92164fa1d8956aec4971959ffdf4e7fece0f2dca4cdd943d9228d557",
-      "bytes": 18599
+      "sha256": "b7e1ab1afcd5d95ec7ce7828be3d05c48646ff5f8ca8144604560d990fcc09fd",
+      "bytes": 28659
     },
     {
       "path": "dist-protected/modules/regbattle/embeds.js",
-      "sha256": "90a27c496a205130b5903885238d22ef245bea7149aed29f6d40c92228ba69f6",
-      "bytes": 74394
+      "sha256": "f047fdd0e87d5f40e56b1657549c44b2217ed7efbef50c0f028a0d8dfbc411c4",
+      "bytes": 96310
     },
     {
       "path": "dist-protected/modules/regbattle/handlers.js",
-      "sha256": "85beb315bc0ae90ed85ed1b063761c6f5c58b0f6d9c14c2a3a60e364e40ee495",
-      "bytes": 265829
+      "sha256": "125c8f452eabedde06a1d8d4db71009dbebb03c7747eb5845d6f7665dc3ef4dd",
+      "bytes": 286051
     },
     {
       "path": "dist-protected/modules/regbattle/index.js",
@@ -617,8 +682,13 @@
     },
     {
       "path": "dist-protected/modules/regbattle/lifecycle.js",
-      "sha256": "20110c6d1be6021e282f44c71b0c31ee79ad16b614c7470ddaffe7710f705794",
-      "bytes": 283771
+      "sha256": "e2f4f3321c941d387c5e89f38cc61c41d0e2744ca4bcd08539cad986d7e363ba",
+      "bytes": 300708
+    },
+    {
+      "path": "dist-protected/modules/regbattle/notifyToggle.js",
+      "sha256": "9508e04f567644ac3d64c076782b24f97fb6d31eddf1f7ea013338ad90945715",
+      "bytes": 13019
     },
     {
       "path": "dist-protected/modules/regbattle/ordersMutes.js",
@@ -627,13 +697,13 @@
     },
     {
       "path": "dist-protected/modules/regbattle/pingEligibility.js",
-      "sha256": "85e4114b2ca0f56b22862ccd5e4de5d0ab9e757570779571006acc05d546f525",
-      "bytes": 15720
+      "sha256": "7c63dcff6fa026cecebc40eb8e801b21350f313968ffea8d62e1d6aa4e5473ae",
+      "bytes": 21411
     },
     {
       "path": "dist-protected/modules/regbattle/pinger.js",
-      "sha256": "13328e8a7eadcc839597ec61e3da87e5f9e18de2e98eced2ee5059a43be9c124",
-      "bytes": 94525
+      "sha256": "9f1f84cb0bfe8b970169348e64d1d66b8ed99f83092b84f14e3c1311724650cd",
+      "bytes": 104659
     },
     {
       "path": "dist-protected/modules/regbattle/pingerCooldown.js",
@@ -641,9 +711,19 @@
       "bytes": 19854
     },
     {
+      "path": "dist-protected/modules/regbattle/pingerDisplayStatus.js",
+      "sha256": "bdd22548322bd963be4b78e2a8b53a1b5e1587e9043b6a805b477888e48eb15b",
+      "bytes": 18697
+    },
+    {
+      "path": "dist-protected/modules/regbattle/pingerMessages.js",
+      "sha256": "9a2285770b0e89d834afd3d8be47d8dfafb1329e3b185291e6eddf9126804da1",
+      "bytes": 4736
+    },
+    {
       "path": "dist-protected/modules/regbattle/pingerPolicy.js",
-      "sha256": "9ba8b9c2551206265b1ae0415bd7493bb334a7388a39c5220038731c53ae58e7",
-      "bytes": 13950
+      "sha256": "a91af17b6e69bb6cae04c47f3334fd666533c8a7f755db2fb4753bd8326e9c52",
+      "bytes": 15098
     },
     {
       "path": "dist-protected/modules/regbattle/reprimandScheduler.js",
@@ -652,8 +732,13 @@
     },
     {
       "path": "dist-protected/modules/regbattle/safety.js",
-      "sha256": "46b3604363ac73ef05bda033b4df3dcfb04b5b0cf46434b851b51dca5b5fa81e",
-      "bytes": 15587
+      "sha256": "490d241c95d59b510f9bc2bb1a65152777b7ca242a51293770225dbef89900a3",
+      "bytes": 18478
+    },
+    {
+      "path": "dist-protected/modules/regbattle/squadNumbering.js",
+      "sha256": "a990edbf3e838559a5ce248240f61ea6e02a3cefa4a71cd54a4dbe3518cc670a",
+      "bytes": 6620
     },
     {
       "path": "dist-protected/modules/regbattle/statusPanelPolicy.js",
@@ -777,8 +862,8 @@
     },
     {
       "path": "dist-protected/modules/tempvoice/lifecycle.js",
-      "sha256": "7d99a5ecad4e7276be3e741a8d797d3a5c2d78d530e95d984d1962b935bb382f",
-      "bytes": 85397
+      "sha256": "ec20d276bbec5b7875f3196a4fb783cc97574e5cc9c878a461969f885ac4771a",
+      "bytes": 94677
     },
     {
       "path": "dist-protected/modules/tempvoice/permissionSync.js",
@@ -787,8 +872,8 @@
     },
     {
       "path": "dist-protected/modules/tempvoice/recovery.js",
-      "sha256": "7554c78547512063feb30bb92affbe196ab99373cb0d971e290f04f723fdffb1",
-      "bytes": 11993
+      "sha256": "90e7ad4b72fc8545ff6f37c4a0e4dd67ab9c385329dd56f5f2e8f2da52c202d1",
+      "bytes": 20347
     },
     {
       "path": "dist-protected/modules/tempvoice/utils.js",
@@ -802,18 +887,18 @@
     },
     {
       "path": "dist-protected/modules/vacation/commands/vacation.js",
-      "sha256": "8d6a8914c82d11700232b3f75b051f6dc1aeb64a922f5aef98b1152bbd8181cf",
-      "bytes": 115451
+      "sha256": "24e5f7bd7c378c50c924e92f5fddf79aa6a4596d5b1da610e67c47d80ec18424",
+      "bytes": 132283
     },
     {
       "path": "dist-protected/modules/vacation/constants.js",
-      "sha256": "9402e5e29d324549628038f2e7f82385a8ce3fe3f59f14507075907ba0b52d63",
-      "bytes": 13795
+      "sha256": "f31efd429bd95210c15ee1f579dfff662c58cc8991983034dda5795e54e47f2b",
+      "bytes": 14204
     },
     {
       "path": "dist-protected/modules/vacation/database.js",
-      "sha256": "a444bd0677887e2b04503e49ee2450a19d1bf8ed3e6dda2f5fd15c291cb957de",
-      "bytes": 62839
+      "sha256": "3c9c298cdc3616bb4b939365f0961f46f329f32426b2e190662eef8e83ed823d",
+      "bytes": 75777
     },
     {
       "path": "dist-protected/modules/vacation/embeds.js",
@@ -831,24 +916,29 @@
       "bytes": 10368
     },
     {
+      "path": "dist-protected/modules/vacation/roleConfigLock.js",
+      "sha256": "26ad7f96d1ce2e762eaab36a1d9038c97e01b4b5a9e265cb00ea95b8ad9ea6dc",
+      "bytes": 4668
+    },
+    {
       "path": "dist-protected/modules/vacation/saga.js",
-      "sha256": "79c02cfdb2cc5d29f68e73b95b43b33ae0e353b03478e80a5fd0eeab2711f167",
-      "bytes": 38798
+      "sha256": "a18a7d3bc998cd2d3d88f3a6fa413d7e2519759c825ffae390067c9b747e7c8b",
+      "bytes": 51374
     },
     {
       "path": "dist-protected/modules/vacation/scheduler.js",
-      "sha256": "d63a317ded964f1d07fb71aa2c30abedaf96262cb9085e8680aa360d64d925e5",
-      "bytes": 42010
+      "sha256": "0ef1ed2b08a6b31a9e01a22d1131e440316bf698bfb9c60bd2409172df2e19e9",
+      "bytes": 45992
     },
     {
       "path": "dist-protected/modules/vacation/state.js",
-      "sha256": "0fbb7a32bb6e9b414a5169e614132de91300a2a9896d51b55d65d142bc83d325",
-      "bytes": 11730
+      "sha256": "20b836acc0b5ec0f0e07cc02d28491418cc7392ed2fbac4026b00b1114e6c6dd",
+      "bytes": 19785
     },
     {
       "path": "dist-protected/modules/vacation/utils.js",
-      "sha256": "827bd7474016d8f044e36a85bd16021b7f0fed341643dcc3707fdbfb798f0bd5",
-      "bytes": 30164
+      "sha256": "f78394691c44217b9d0570eaf3652bf3c4d10460c083ce378474a9f63ca1da03",
+      "bytes": 34569
     },
     {
       "path": "dist-protected/modules/welcome/commands/welcome.js",
@@ -877,8 +967,8 @@
     },
     {
       "path": "dist-protected/modules/welcome/membershipStore.js",
-      "sha256": "b341ddf2822f56048efb3708d0b834eb05d809739872a79878f0640aebf88eac",
-      "bytes": 12200
+      "sha256": "72057e5458c3a6444db0ab07008c1e0143d853d6244edbb1e100257a216d0347",
+      "bytes": 13498
     },
     {
       "path": "dist-protected/modules/welcome/policy.js",
@@ -937,23 +1027,23 @@
     },
     {
       "path": "locales/en.json",
-      "sha256": "1dfa22a3508f072c5fef091295201d688fc48abccbec8782134925f8e2318412",
-      "bytes": 107179
+      "sha256": "249e830542959014dcf4e721ac8af8f3500e64a4fca69d2ca8d5e2e983c07fc0",
+      "bytes": 111428
     },
     {
       "path": "locales/ru.json",
-      "sha256": "55b4a79a39760a0575e71781c393138e98c73397e542b9cd0aac4f05de08471a",
-      "bytes": 148560
+      "sha256": "e8e6883d285d5f299fb024ddf3ff6dca0aa7eb6541e2c28541e5218be5fe2c20",
+      "bytes": 154716
     },
     {
       "path": "package-lock.json",
-      "sha256": "10a26477524b01cf381b6273a8fe91848ddf47d08ead3dc7ac4d4655b0e71eb8",
-      "bytes": 33012
+      "sha256": "272a1ae2e65560978de8f10f498dc34b67c758fdde68ee6d2ea07ba3431f9238",
+      "bytes": 33702
     },
     {
       "path": "package.json",
-      "sha256": "f985dbbc4813f90501ea556f70337158afa3f47473646e9d20e4539716f43346",
-      "bytes": 998
+      "sha256": "679565fec093d322bee5fbf033adec101d898bd8b88768ba5f7547ab72acadb3",
+      "bytes": 1027
     },
     {
       "path": "prisma/migrations/20260719000000_baseline/migration.sql",
@@ -966,14 +1056,34 @@
       "bytes": 18293
     },
     {
+      "path": "prisma/migrations/20260721000000_vacation_role_snapshot_seal/migration.sql",
+      "sha256": "341fab363c466627b908648181245fa24eea8dcd2325f7b5eee253dc50ff0772",
+      "bytes": 505
+    },
+    {
+      "path": "prisma/migrations/20260724180000_minecraft_foundation/migration.sql",
+      "sha256": "927706176c284d3c55e6381cfc4d6be27617dc50924134bc3486c7da4fc72531",
+      "bytes": 2608
+    },
+    {
+      "path": "prisma/migrations/20260724183500_add_chat_channel_id/migration.sql",
+      "sha256": "874634c6be9c31e01328825b691fd339f0dd346f7225662c6eff4e4e0bfa8140",
+      "bytes": 165
+    },
+    {
+      "path": "prisma/migrations/20260727000000_reconcile_runtime_schema/migration.sql",
+      "sha256": "8b681f2fe62227e7b6c5a45761e87b6d4460f8fe25061e4195400843e815495a",
+      "bytes": 503
+    },
+    {
       "path": "prisma/migrations/migration_lock.toml",
       "sha256": "d6bae7899f05da956e1070ba5703455503208ef79e161acb18c93bfe3c6cd236",
       "bytes": 127
     },
     {
       "path": "prisma/schema.prisma",
-      "sha256": "24a4f8e528c4ccd36bead9fad8957437abb71527d849da0bade50544541a7b49",
-      "bytes": 32479
+      "sha256": "7a51f4a97a438a4256db8bdea6009c01c8c2e66ef1c0b55a1715be4d8277ec55",
+      "bytes": 34339
     },
     {
       "path": "scripts/entrypoint.sh",
@@ -982,8 +1092,8 @@
     },
     {
       "path": "scripts/snapshot-baseline-data.js",
-      "sha256": "aa14946f3adf21262aa7c7c76d3446b1ee162b24eaf0d641323a52d411c3d827",
-      "bytes": 65357
+      "sha256": "9dbe215de4323f6648cf7d93f52b43f17c228825c2ed3388149c04fd3c6e44a4",
+      "bytes": 73311
     },
     {
       "path": "scripts/snapshot-redis-data.js",
@@ -997,8 +1107,8 @@
     },
     {
       "path": "scripts/verify-distribution.js",
-      "sha256": "fcb6974f3e8bf733d35bf6898b60595a147d71892c6744700c0c8a57fab99c2d",
-      "bytes": 23214
+      "sha256": "d3756aa88da59a4bbfc9144b17130866ccd87dbf37790e8a306b9a07a748399e",
+      "bytes": 23242
     },
     {
       "path": "scripts/verify-pb-idle.js",

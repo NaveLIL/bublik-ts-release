@@ -21,6 +21,7 @@ const requiredPublicFiles = new Set([
   '.github/ISSUE_TEMPLATE/config.yml',
   '.github/ISSUE_TEMPLATE/feature.yml',
   '.github/PULL_REQUEST_TEMPLATE.md',
+  '.github/dependabot.yml',
   '.github/workflows/distribution-ci.yml',
   '.gitignore',
   'CHANGELOG.md',
