@@ -1,9 +1,9 @@
 {
   "schemaVersion": 2,
   "releaseVersion": "1.0.5",
-  "createdAt": "2026-07-26T23:43:39.000Z",
-  "sourceRevision": "e3f77e8a5c522446c87fa6944074303bff874ace",
-  "sourceTree": "de22fc6ad37d69434d16fac4a3fa0a6ef250ec70",
+  "createdAt": "2026-07-27T00:23:05.000Z",
+  "sourceRevision": "3d23cc993e269baf6b56969ed690ae9f36498ebb",
+  "sourceTree": "a7eed3edc9848931b82e9aefacd4b49df44619f6",
   "nodeMajor": 24,
   "buildImage": "node:24-alpine@sha256:a0b9bf06e4e6193cf7a0f58816cc935ff8c2a908f81e6f1a95432d679c54fbfd",
   "reproducibleBuildCount": 2,
@@ -11,9 +11,9 @@
   "runtimeDependencyTreeSha256": "b74750ea100155a7483078c42836b7d1864ec2e58d893d2942fba5385862338e",
   "artifactRoot": "dist-protected",
   "publishableFileCount": 219,
-  "publishableTreeSha256": "ae9df6d808ddc650967a362255695c1fd93c86751d5f6c9d4b8b423afe38f2a5",
+  "publishableTreeSha256": "b7f4f56427338a60d03bef3eae83448e61ac7cfc8f4bd15aba2e9182bbe434f5",
   "artifactFileCount": 181,
-  "artifactTreeSha256": "2984678b816762c97d49e5b81fd9ac9e634189ebfb59835ecf51ddb37c2dfc4f",
+  "artifactTreeSha256": "7c9731c19d7735f267daa6d0ec6f06d010aaea213daa3d95b8ababb77d7b9b0c",
   "toolchain": {
     "typescript": "5.9.3",
     "javascriptObfuscator": "4.2.2",
@@ -497,8 +497,8 @@
     },
     {
       "path": "dist-protected/modules/economy/raid.js",
-      "sha256": "d138395bcaecdcf3c404e8045657c527a1280125e7132d6a4c4bc78a33a4208f",
-      "bytes": 146620
+      "sha256": "69f5cb2a70104dbd62048d6f284619d5ab99e9dd2b3554d0f46d25b5e67cc599",
+      "bytes": 158828
     },
     {
       "path": "dist-protected/modules/economy/random.js",
@@ -592,8 +592,8 @@
     },
     {
       "path": "dist-protected/modules/minecraft/constants.js",
-      "sha256": "e6b717fbd72d689150be73f7cac41ad7b1a13859029dda513dcd4c1ca3dce1ab",
-      "bytes": 5418
+      "sha256": "6e7d27a4321e3c04d6b544bd4d929bf02f412f063816ef1a8353f2df5cf79b23",
+      "bytes": 6757
     },
     {
       "path": "dist-protected/modules/minecraft/database.js",
@@ -607,13 +607,13 @@
     },
     {
       "path": "dist-protected/modules/minecraft/index.js",
-      "sha256": "38651c8c8814b8873afcf1540d979096be362dc0685d1ec6295d85428d6e8978",
-      "bytes": 14111
+      "sha256": "fa29705f1c2b29c8c3c61588b372d5290d2f15951340894ff6be0558826f4002",
+      "bytes": 17226
     },
     {
       "path": "dist-protected/modules/minecraft/services/chat-bridge.js",
-      "sha256": "9a0f3d5c80df1f99c09bbe66853d5746afaaad965341552ecf3950fa08b21cfc",
-      "bytes": 40097
+      "sha256": "113713d8562189ee1a871852edf504301d991b1cc2f7e1882b79dd1aa844c3f9",
+      "bytes": 42540
     },
     {
       "path": "dist-protected/modules/minecraft/services/economy-bridge.js",
@@ -627,8 +627,8 @@
     },
     {
       "path": "dist-protected/modules/minecraft/services/rcon-service.js",
-      "sha256": "bcb6f4652f410a28965632d7ef891894a7b417211da09ea8e61db23a12ffe431",
-      "bytes": 13106
+      "sha256": "b1f7430f06174d3ea9bfdb64a8b2f1891745006a3ee7a6235d4f87389c585e07",
+      "bytes": 14051
     },
     {
       "path": "dist-protected/modules/minecraft/services/shop-command-policy.js",
@@ -637,8 +637,8 @@
     },
     {
       "path": "dist-protected/modules/minecraft/services/status-tracker.js",
-      "sha256": "93de2819410d16825a50c0a0188952f8317f611c4b92c0fb59f60c4edcce7032",
-      "bytes": 41352
+      "sha256": "c0625d3368541482c617ecaaab07596aaf797fbdf837e8ec447fe3e88fd2ccd6",
+      "bytes": 36549
     },
     {
       "path": "dist-protected/modules/regbattle/commands/regbattle.js",
@@ -862,8 +862,8 @@
     },
     {
       "path": "dist-protected/modules/tempvoice/lifecycle.js",
-      "sha256": "7d99a5ecad4e7276be3e741a8d797d3a5c2d78d530e95d984d1962b935bb382f",
-      "bytes": 85397
+      "sha256": "ec20d276bbec5b7875f3196a4fb783cc97574e5cc9c878a461969f885ac4771a",
+      "bytes": 94677
     },
     {
       "path": "dist-protected/modules/tempvoice/permissionSync.js",
@@ -872,8 +872,8 @@
     },
     {
       "path": "dist-protected/modules/tempvoice/recovery.js",
-      "sha256": "7554c78547512063feb30bb92affbe196ab99373cb0d971e290f04f723fdffb1",
-      "bytes": 11993
+      "sha256": "90e7ad4b72fc8545ff6f37c4a0e4dd67ab9c385329dd56f5f2e8f2da52c202d1",
+      "bytes": 20347
     },
     {
       "path": "dist-protected/modules/tempvoice/utils.js",
