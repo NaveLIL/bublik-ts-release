@@ -1,7 +1,7 @@
 {
   "schemaVersion": 2,
   "releaseVersion": "1.0.6",
-  "createdAt": "2026-07-27T01:46:03.576Z",
+  "createdAt": "2026-07-27T01:53:41.024Z",
   "sourceRevision": "f8da4f584a4bef8773c79ee7c368d4e1c01947dc",
   "sourceTree": "6c2d89da83ebc74b5d2331c37aef9a8a9cfeb38a",
   "nodeMajor": 24,
@@ -11,7 +11,7 @@
   "runtimeDependencyTreeSha256": "b74750ea100155a7483078c42836b7d1864ec2e58d893d2942fba5385862338e",
   "artifactRoot": "dist-protected",
   "publishableFileCount": 219,
-  "publishableTreeSha256": "7f26e7bd7881f2bc045404a567fee0e35587d2d6c1061627142afe6d8da0373d",
+  "publishableTreeSha256": "0bc15d8da35d1ed5f23655fcbb59fbcc6397a3ae8a5586adb8a91097a3bee754",
   "artifactFileCount": 181,
   "artifactTreeSha256": "8458c9ade337ea837e60f9ea5388308230ec7d9365870556f36a4e6bd40785d7",
   "toolchain": {
@@ -82,8 +82,8 @@
     },
     {
       "path": "CHANGELOG.md",
-      "sha256": "3067c87cc3f2e8e4f55a94c3faac4b74ce22d3a482a40fbf47ee5d2aea150e79",
-      "bytes": 4457
+      "sha256": "788c6099e1a9b75170a09f9f024d3638c3a9102d36486f39b2381d4e6b3701c8",
+      "bytes": 5829
     },
     {
       "path": "CONTRIBUTING.md",
