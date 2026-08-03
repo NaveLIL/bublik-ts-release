@@ -18,7 +18,7 @@
     "docker:logs": "docker compose -p bublik-n logs -f bot"
   },
   "dependencies": {
-    "@prisma/client": "^5.22.0",
+    "@prisma/client": "^7.9.1",
     "discord.js": "^14.27.0",
     "dotenv": "^16.4.5",
     "ioredis": "^5.4.1",
