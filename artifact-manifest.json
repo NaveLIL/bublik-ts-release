@@ -1,9 +1,9 @@
 {
   "schemaVersion": 2,
-  "releaseVersion": "1.0.7",
-  "createdAt": "2026-08-10T10:46:52.000Z",
-  "sourceRevision": "4f25069e896d7b8087f67905c8969bf3d923c4bc",
-  "sourceTree": "7af7094486a81db2b7d65fd6ebac3ecd12947118",
+  "releaseVersion": "1.0.8",
+  "createdAt": "2026-08-10T14:28:10.000Z",
+  "sourceRevision": "47e18a19b367ed9c799bd528a7666e32d080f9da",
+  "sourceTree": "cb05f218d5201d3918fb94f0cfe8fd328b76f617",
   "nodeMajor": 24,
   "buildImage": "node:24-alpine@sha256:a0b9bf06e4e6193cf7a0f58816cc935ff8c2a908f81e6f1a95432d679c54fbfd",
   "reproducibleBuildCount": 2,
@@ -11,9 +11,9 @@
   "runtimeDependencyTreeSha256": "6bf77084c8908f1c30798a5b892ac7bc89fd1cf7118583cdbf42d0f2d5f093b5",
   "artifactRoot": "dist-protected",
   "publishableFileCount": 221,
-  "publishableTreeSha256": "5a9e5696060743e02b5abd7e80f4ad83a75a4b66bc8bfd9f629f9511b2ebccca",
+  "publishableTreeSha256": "045af51a2c39194d41a780ea327663e66d5c9ecc077b480545ff43cc35a8f575",
   "artifactFileCount": 182,
-  "artifactTreeSha256": "5b2fc94c2284db4d4ff964d4564aa44a54ec5bf393f3d754f7efe3805e59a368",
+  "artifactTreeSha256": "12cbe0c774ddfaceccce9e7ac8fcb71911bd27e16742ab78fa4c6cb6332e2d77",
   "toolchain": {
     "typescript": "5.9.3",
     "javascriptObfuscator": "4.2.2",
@@ -82,8 +82,8 @@
     },
     {
       "path": "CHANGELOG.md",
-      "sha256": "cf5f02d0036da0f26dec47d612958ceba9117ee64c2ab58ae2c02034af44899c",
-      "bytes": 7392
+      "sha256": "ceacaccb56b8ae36a585149fcaf9b6443befa66f3d39c458acbf371bcb73d9d9",
+      "bytes": 7815
     },
     {
       "path": "CONTRIBUTING.md",
@@ -972,8 +972,8 @@
     },
     {
       "path": "dist-protected/modules/welcome/policy.js",
-      "sha256": "6ab753e9e289c8a47796241cf715b25e2a17e071862f7e8be619e0bf8d982518",
-      "bytes": 23228
+      "sha256": "4c3078c3c4aa0e5bdb881573e09aae4abb136e18c8b66013473480ec6e467201",
+      "bytes": 23453
     },
     {
       "path": "dist-protected/modules/welcome/reminderClaim.js",
@@ -987,8 +987,8 @@
     },
     {
       "path": "dist-protected/modules/welcome/roleGrantRecovery.js",
-      "sha256": "0398a80546ed6d3a6e286703c8ced3dc5c9cf6400ce51012e9c1a336b73c82e2",
-      "bytes": 81559
+      "sha256": "248d7a9edcd9f8d84520e28de4da2a08c477b53c1338bd42d689afe5d1d13d6f",
+      "bytes": 81489
     },
     {
       "path": "dist-protected/modules/welcome/roleRemovalIntent.js",
@@ -1042,12 +1042,12 @@
     },
     {
       "path": "package-lock.json",
-      "sha256": "e7ddfd6faf9748dc271d58fd2aaf6b1f16a688773a457fe7daa696c022baa19b",
+      "sha256": "3ddd5b2af6efa57452c00260e2dd274610226a7ee24aca90163da2c71fb82076",
       "bytes": 33662
     },
     {
       "path": "package.json",
-      "sha256": "41acf7bc480bba0f7140282d35f5957c25946421d2b45ba55fbcc0806ad4d76b",
+      "sha256": "7daea684fedb5a478c2a264af341fbe7936110dd52c4cb12ee865fe4651c1665",
       "bytes": 1027
     },
     {
