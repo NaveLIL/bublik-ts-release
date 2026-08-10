@@ -344,6 +344,8 @@ const MINECRAFT_CHAT_MIGRATION = '20260724183500_add_chat_channel_id';
 const MINECRAFT_CHAT_SHA256 = '874634c6be9c31e01328825b691fd339f0dd346f7225662c6eff4e4e0bfa8140';
 const RUNTIME_SCHEMA_RECONCILIATION_MIGRATION = '20260727000000_reconcile_runtime_schema';
 const RUNTIME_SCHEMA_RECONCILIATION_SHA256 = '8b681f2fe62227e7b6c5a45761e87b6d4460f8fe25061e4195400843e815495a';
+const WELCOME_CONTENT_MIGRATION = '20260810153000_welcome_content';
+const WELCOME_CONTENT_SHA256 = 'db02ee74dede27e04aa9a1bf4e1c1141ce56efa54d4d2f83f14d83ff85adec33';
 const PRISMA_SCHEMA_PATH = resolve(__dirname, '..', 'prisma', 'schema.prisma');
 const MIGRATIONS_PATH = resolve(__dirname, '..', 'prisma', 'migrations');
 
@@ -379,6 +381,11 @@ function migrationSpecs() {
     {
       name: RUNTIME_SCHEMA_RECONCILIATION_MIGRATION,
       sha256: RUNTIME_SCHEMA_RECONCILIATION_SHA256,
+      appliedStepsCounts: [1],
+    },
+    {
+      name: WELCOME_CONTENT_MIGRATION,
+      sha256: WELCOME_CONTENT_SHA256,
       appliedStepsCounts: [1],
     },
   ];

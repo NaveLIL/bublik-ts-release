@@ -1,19 +1,19 @@
 {
   "schemaVersion": 2,
-  "releaseVersion": "1.0.6",
-  "createdAt": "2026-07-27T01:53:41.024Z",
-  "sourceRevision": "f8da4f584a4bef8773c79ee7c368d4e1c01947dc",
-  "sourceTree": "6c2d89da83ebc74b5d2331c37aef9a8a9cfeb38a",
+  "releaseVersion": "1.0.7",
+  "createdAt": "2026-08-10T10:46:52.000Z",
+  "sourceRevision": "4f25069e896d7b8087f67905c8969bf3d923c4bc",
+  "sourceTree": "7af7094486a81db2b7d65fd6ebac3ecd12947118",
   "nodeMajor": 24,
   "buildImage": "node:24-alpine@sha256:a0b9bf06e4e6193cf7a0f58816cc935ff8c2a908f81e6f1a95432d679c54fbfd",
   "reproducibleBuildCount": 2,
   "runtimeDependencyCount": 79,
-  "runtimeDependencyTreeSha256": "b74750ea100155a7483078c42836b7d1864ec2e58d893d2942fba5385862338e",
+  "runtimeDependencyTreeSha256": "6bf77084c8908f1c30798a5b892ac7bc89fd1cf7118583cdbf42d0f2d5f093b5",
   "artifactRoot": "dist-protected",
-  "publishableFileCount": 219,
-  "publishableTreeSha256": "0bc15d8da35d1ed5f23655fcbb59fbcc6397a3ae8a5586adb8a91097a3bee754",
-  "artifactFileCount": 181,
-  "artifactTreeSha256": "8458c9ade337ea837e60f9ea5388308230ec7d9365870556f36a4e6bd40785d7",
+  "publishableFileCount": 221,
+  "publishableTreeSha256": "5a9e5696060743e02b5abd7e80f4ad83a75a4b66bc8bfd9f629f9511b2ebccca",
+  "artifactFileCount": 182,
+  "artifactTreeSha256": "5b2fc94c2284db4d4ff964d4564aa44a54ec5bf393f3d754f7efe3805e59a368",
   "toolchain": {
     "typescript": "5.9.3",
     "javascriptObfuscator": "4.2.2",
@@ -82,8 +82,8 @@
     },
     {
       "path": "CHANGELOG.md",
-      "sha256": "788c6099e1a9b75170a09f9f024d3638c3a9102d36486f39b2381d4e6b3701c8",
-      "bytes": 5829
+      "sha256": "cf5f02d0036da0f26dec47d612958ceba9117ee64c2ab58ae2c02034af44899c",
+      "bytes": 7392
     },
     {
       "path": "CONTRIBUTING.md",
@@ -152,8 +152,8 @@
     },
     {
       "path": "dist-protected/core/GuildConfig.js",
-      "sha256": "d9801eede1b24d2279c2d9e7ae0da5d7b55f21cf48367304062e3e24e99dee6f",
-      "bytes": 37313
+      "sha256": "f9837cf5640c9c865731aaae641a3f4a9843a427557389a1c4a7c34f7d7867d5",
+      "bytes": 37189
     },
     {
       "path": "dist-protected/core/GuildMemberSnapshot.js",
@@ -887,8 +887,8 @@
     },
     {
       "path": "dist-protected/modules/vacation/commands/vacation.js",
-      "sha256": "24e5f7bd7c378c50c924e92f5fddf79aa6a4596d5b1da610e67c47d80ec18424",
-      "bytes": 132283
+      "sha256": "12c649c140f60ad873b8596655c2668e17ae859c5665f5782fc1d563b4f0a70b",
+      "bytes": 136418
     },
     {
       "path": "dist-protected/modules/vacation/constants.js",
@@ -907,8 +907,8 @@
     },
     {
       "path": "dist-protected/modules/vacation/handlers.js",
-      "sha256": "54d5ccd555d5a230324695c833e461107fe0727d9ec9b2b7272abcf6df606ad0",
-      "bytes": 108672
+      "sha256": "c3e2a1132ba6c66021e851859289d8d76b811c9dc6d95bcfceb51d3a9c50073e",
+      "bytes": 111399
     },
     {
       "path": "dist-protected/modules/vacation/index.js",
@@ -922,43 +922,43 @@
     },
     {
       "path": "dist-protected/modules/vacation/saga.js",
-      "sha256": "a18a7d3bc998cd2d3d88f3a6fa413d7e2519759c825ffae390067c9b747e7c8b",
-      "bytes": 51374
+      "sha256": "8318f731429403bab371f28cc054a99537d28067c74b1ef49eb3b7effdc931c6",
+      "bytes": 56727
     },
     {
       "path": "dist-protected/modules/vacation/scheduler.js",
-      "sha256": "0ef1ed2b08a6b31a9e01a22d1131e440316bf698bfb9c60bd2409172df2e19e9",
-      "bytes": 45992
+      "sha256": "327319a36ed35097765593565eb21baa15d6234cbafd9e91dbc82a5e49676252",
+      "bytes": 46950
     },
     {
       "path": "dist-protected/modules/vacation/state.js",
-      "sha256": "20b836acc0b5ec0f0e07cc02d28491418cc7392ed2fbac4026b00b1114e6c6dd",
-      "bytes": 19785
+      "sha256": "be6676c0ee8449b65ce4b1c1bedf9ca9dc743a25433e80ce9152bf914dccb050",
+      "bytes": 21584
     },
     {
       "path": "dist-protected/modules/vacation/utils.js",
-      "sha256": "f78394691c44217b9d0570eaf3652bf3c4d10460c083ce378474a9f63ca1da03",
-      "bytes": 34569
+      "sha256": "72d62c7bdaf7bb4dd278c6225f84a61a25f221fec9eb1dcb68636ffb13e5695d",
+      "bytes": 28677
     },
     {
       "path": "dist-protected/modules/welcome/commands/welcome.js",
-      "sha256": "42f2bbe3774da38b70abaf80e512442279cb677c50ff91be6477ad8e6d5ca56a",
-      "bytes": 40804
+      "sha256": "b22df7228aadab32af488bee847244ccd945fc7244354a76272da92e43f97d95",
+      "bytes": 58630
     },
     {
       "path": "dist-protected/modules/welcome/embeds.js",
-      "sha256": "65eada42f38a4a96b2362db90ec96529979168eb9b3e528507de7b04136d3555",
-      "bytes": 29391
+      "sha256": "c56880ed5d1c1c9e338ae8c28b5e428a246f3903543c18b4c78db3bfd7177844",
+      "bytes": 45640
     },
     {
       "path": "dist-protected/modules/welcome/handlers.js",
-      "sha256": "c8786ab2540dee27d899b2c71aa5912994ceae400c054fd925e8c52618c5172c",
-      "bytes": 115413
+      "sha256": "6063ff362add5d44499106cf332719e0c0ac88af0f514ceddd2a32c6307abdd7",
+      "bytes": 128829
     },
     {
       "path": "dist-protected/modules/welcome/index.js",
-      "sha256": "c2b5822a145494198edd177aa95854579b9947db58510642f14defd0e42b9917",
-      "bytes": 88849
+      "sha256": "212832d39e115f28d427c7e93ec684d01a1574ba6c612aef0f8c154d0326ffb2",
+      "bytes": 99801
     },
     {
       "path": "dist-protected/modules/welcome/lifecycleLock.js",
@@ -972,8 +972,8 @@
     },
     {
       "path": "dist-protected/modules/welcome/policy.js",
-      "sha256": "c90a4c75155d69c5a75925e13a170c7740bc0acfdb0f55ac1cf8a9afd040798f",
-      "bytes": 19832
+      "sha256": "6ab753e9e289c8a47796241cf715b25e2a17e071862f7e8be619e0bf8d982518",
+      "bytes": 23228
     },
     {
       "path": "dist-protected/modules/welcome/reminderClaim.js",
@@ -999,6 +999,11 @@
       "path": "dist-protected/modules/welcome/roleRemovalRecovery.js",
       "sha256": "24871280b5d1e89eac3647761e284520918a6119c2dbb7add772982d0ce02ce4",
       "bytes": 64228
+    },
+    {
+      "path": "dist-protected/modules/welcome/ticketPingCleanup.js",
+      "sha256": "61d98c24ddff04ddda75a38e71fd4448ba295b88bb3d6708fb8750ea65eb2ec1",
+      "bytes": 15884
     },
     {
       "path": "dist-protected/types/Command.js",
@@ -1027,22 +1032,22 @@
     },
     {
       "path": "locales/en.json",
-      "sha256": "249e830542959014dcf4e721ac8af8f3500e64a4fca69d2ca8d5e2e983c07fc0",
-      "bytes": 111428
+      "sha256": "994cfa76b122d3fb322b7866bfd47085c81dcc0b82430920c6a2faefaac369f6",
+      "bytes": 112456
     },
     {
       "path": "locales/ru.json",
-      "sha256": "e8e6883d285d5f299fb024ddf3ff6dca0aa7eb6541e2c28541e5218be5fe2c20",
-      "bytes": 154716
+      "sha256": "ff492fe89cd8dabf3ae48cc6f3fc3dc550b6483a944e9c1aeaaaf5cd1e538700",
+      "bytes": 156322
     },
     {
       "path": "package-lock.json",
-      "sha256": "3f374458b2636c3ee2bd7494dfed35c654350f3a59ce536830e53c7c19bdb73a",
-      "bytes": 33702
+      "sha256": "e7ddfd6faf9748dc271d58fd2aaf6b1f16a688773a457fe7daa696c022baa19b",
+      "bytes": 33662
     },
     {
       "path": "package.json",
-      "sha256": "f27d00508c2e160e69b37473e772a376ab2346816b7b113019b1f684384794c8",
+      "sha256": "41acf7bc480bba0f7140282d35f5957c25946421d2b45ba55fbcc0806ad4d76b",
       "bytes": 1027
     },
     {
@@ -1076,14 +1081,19 @@
       "bytes": 503
     },
     {
+      "path": "prisma/migrations/20260810153000_welcome_content/migration.sql",
+      "sha256": "db02ee74dede27e04aa9a1bf4e1c1141ce56efa54d4d2f83f14d83ff85adec33",
+      "bytes": 147
+    },
+    {
       "path": "prisma/migrations/migration_lock.toml",
       "sha256": "d6bae7899f05da956e1070ba5703455503208ef79e161acb18c93bfe3c6cd236",
       "bytes": 127
     },
     {
       "path": "prisma/schema.prisma",
-      "sha256": "7a51f4a97a438a4256db8bdea6009c01c8c2e66ef1c0b55a1715be4d8277ec55",
-      "bytes": 34339
+      "sha256": "1b0b8431ffefca91f63c248e60f0057bbab396675efa3ff9c5ae0a8d947c2b2f",
+      "bytes": 34425
     },
     {
       "path": "scripts/entrypoint.sh",
@@ -1092,8 +1102,8 @@
     },
     {
       "path": "scripts/snapshot-baseline-data.js",
-      "sha256": "9dbe215de4323f6648cf7d93f52b43f17c228825c2ed3388149c04fd3c6e44a4",
-      "bytes": 73311
+      "sha256": "5cc0803e0d9e9c5bb73133ce3d1fa7fe8d191d8f8fd2ebed7bd242105e1219fc",
+      "bytes": 73599
     },
     {
       "path": "scripts/snapshot-redis-data.js",

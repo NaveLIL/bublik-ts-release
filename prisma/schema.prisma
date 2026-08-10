@@ -19,9 +19,12 @@ model GuildSettings {
   // welcome & roles
   welcomeChannelId String?
   ticketChannelId  String?
+  ticketPanelMessageId String?
   autoRoleId       String?
   recruitRoleId    String?
   memberRoleId     String?
+  serverRulesText  String?
+  regimentRulesText String?
 
   createdAt DateTime @default(now())
   updatedAt DateTime @updatedAt
